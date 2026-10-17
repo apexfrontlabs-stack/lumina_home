@@ -1,0 +1,977 @@
+{
+  "announcement": {
+    "free_shipping": "Livraison et installation offertes pour toute commande supérieure à {{amount}} !",
+    "sale": "Soldes d'hiver ! Jusqu'à 30 % de réduction sur nos fauteuils de luxe haut de gamme."
+  },
+  "header": {
+    "categories": "Catégories",
+    "browse_categories": "Parcourir les catégories",
+    "wishlist": "Liste d'envies",
+    "cart": "Panier",
+    "login": "Connexion",
+    "signup": "Inscription",
+    "language": "Langue",
+    "currency": "Devise",
+    "nav": {
+      "home": "Accueil",
+      "shop": "Boutique",
+      "blog": "Blog",
+      "about": "À propos",
+      "contact": "Contact",
+      "book_a_team": "Réserver une équipe"
+    },
+    "aria": {
+      "open_menu": "Ouvrir le menu",
+      "close_menu": "Fermer le menu",
+      "go_home": "Lumina Home, aller à la page d'accueil",
+      "main_nav": "Principale",
+      "mobile_nav": "Mobile",
+      "primary_nav": "Principale",
+      "icon_with_count": "{{label}}, {{total}} articles"
+    }
+  },
+  "common": {
+    "last_updated": "Dernière mise à jour : {{date}}",
+    "go_back": "Retour",
+    "back_to_home": "Retour à l'accueil",
+    "back": "Retour",
+    "home": "Accueil",
+    "breadcrumb": "Fil d'Ariane",
+    "color": "Couleur",
+    "close": "Fermer",
+    "pagination": "Pagination",
+    "previous_page": "Page précédente",
+    "next_page": "Page suivante",
+    "loading_product": "Chargement du produit",
+    "decrease_quantity": "Diminuer la quantité",
+    "increase_quantity": "Augmenter la quantité",
+    "rated": "Noté {{rating}} sur {{max}}",
+    "loading": "Chargement",
+    "add_to_wishlist": "Ajouter à la liste d'envies",
+    "remove_from_wishlist": "Retirer de la liste d'envies"
+  },
+  "badge": {
+    "new": "Nouveau",
+    "sale": "Promo",
+    "bestseller": "Meilleure vente",
+    "limited": "Édition limitée",
+    "soldout": "Épuisé"
+  },
+  "categories": {
+    "bedroom": "Chambre de luxe",
+    "decor": "Décoration et accessoires haut de gamme",
+    "dining": "Salle à manger contemporaine",
+    "kids": "Espaces enfants ergonomiques",
+    "kitchen": "Accessoires de cuisine minimalistes"
+  },
+  "services": {
+    "service_1": { "name": "Installation par un menuisier professionnel" },
+    "service_2": { "name": "Équipe de livraison premium" }
+  },
+  "team": {
+    "team_1": { "role": "Designer principal" },
+    "team_2": { "role": "Architecte d'intérieur" },
+    "team_3": { "role": "Maître artisan" },
+    "team_4": { "role": "Directrice du style" }
+  },
+  "testimonials": {
+    "test_1": { "role": "Propriétaire", "review": "Le design minimaliste a complètement transformé mon espace de vie." },
+    "test_2": { "role": "Architecte", "review": "Un savoir-faire d'exception. Les standards d'assemblage sont de tout premier ordre." },
+    "test_3": { "role": "Directrice de studio", "review": "Un service irréprochable, une livraison rapide et un emballage impeccable." },
+    "test_4": { "role": "Designer d'intérieur", "review": "Je le recommande vivement pour les projets d'architecture commerciale contemporaine." }
+  },
+  "blog_categories": {
+    "decor_ideas": "Idées déco",
+    "buying_guides": "Guides d'achat",
+    "small_spaces": "Petits espaces",
+    "care_and_materials": "Entretien et matériaux"
+  },
+  "blogs": {
+    "blog_1": {
+      "title": "L'art des aménagements minimalistes scandinaves",
+      "date": "12 janv. 2026",
+      "excerpt": "Couleurs claires, matériaux authentiques et moins d'objets. Comment apporter le style scandinave dans votre pièce.",
+      "p1": "Le design scandinave, c'est avant tout le calme. Des murs clairs, du bois naturel, des tissus doux et seulement les meubles dont vous vous servez vraiment. Il fonctionne aussi bien dans un grand salon que dans une petite chambre.",
+      "h1": "Commencez par une base apaisante",
+      "p2": "Choisissez deux ou trois couleurs douces, comme le blanc, le gris chaud et le sable. Gardez ces teintes pour les grandes pièces, comme le canapé et le tapis. Ajoutez ensuite une ou deux matières naturelles, par exemple le chêne ou le noyer.",
+      "h2": "Laissez de l'espace libre",
+      "p3": "Minimaliste ne veut pas dire vide, mais cela veut dire laisser de la place pour respirer. Gardez des pans de mur et de sol dégagés, et choisissez un beau meuble fort pour chaque coin plutôt que beaucoup de petits.",
+      "h3": "Quelques règles simples",
+      "ul1": [
+        "Choisissez des meubles aux lignes épurées et aux pieds fins.",
+        "Privilégiez les textures (bouclé, laine, lin) plutôt que les motifs.",
+        "Gardez les surfaces dégagées. Rangez les petits objets hors de vue.",
+        "Ajoutez une lampe à ampoule chaude dans chaque coin salon."
+      ]
+    },
+    "blog_2": {
+      "title": "Bien choisir son bois : noyer ou chêne",
+      "date": "28 janv. 2026",
+      "excerpt": "Tous deux sont magnifiques et durables. Voici comment ils diffèrent par la couleur, la solidité et l'entretien.",
+      "p1": "Le noyer et le chêne comptent parmi les bois les plus appréciés pour les meubles. Tous deux durent de nombreuses années, mais leur aspect et leur toucher sont différents : le bon choix dépend donc de votre pièce et de vos goûts.",
+      "h1": "Couleur et veinage",
+      "p2": "Le noyer est sombre et riche, du brun chocolat au brun violacé profond. Il donne à un lit ou à une table une allure chaleureuse et sérieuse. Le chêne est plus clair, avec un veinage net et bien visible, et convient aux pièces lumineuses et aérées.",
+      "h2": "Solidité",
+      "p3": "Le chêne est un peu plus dur ; il résiste donc très bien aux chocs et à l'usage quotidien. Le noyer est légèrement plus tendre mais reste solide, et il est facile à travailler, ce qui explique son usage fréquent pour les assemblages détaillés.",
+      "h3": "Lequel choisir ?",
+      "ul1": [
+        "Pièce petite ou sombre : le chêne, car il reflète davantage la lumière.",
+        "Grande chambre ou bureau : le noyer, pour une ambiance calme et riche.",
+        "Table de famille très utilisée : le chêne, pour une meilleure résistance à l'usure.",
+        "Mélanger les deux est possible. Gardez un bois comme essence principale et utilisez l'autre en touche d'accent."
+      ]
+    },
+    "blog_3": {
+      "title": "Principes d'éclairage pour les espaces ouverts contemporains",
+      "date": "5 févr. 2026",
+      "excerpt": "Un seul plafonnier ne suffit jamais. Superposez vos éclairages pour réchauffer une pièce ouverte.",
+      "p1": "Dans une pièce ouverte, un seul plafonnier puissant aplatit tout. Les belles pièces utilisent plusieurs sources de lumière à différentes hauteurs.",
+      "h1": "Utilisez trois niveaux",
+      "ul1": [
+        "Éclairage général : la lumière principale qui remplit la pièce.",
+        "Éclairage de travail : une lampe de lecture ou de bureau là où vous avez besoin de bien voir.",
+        "Éclairage d'ambiance : une lampe douce qui met en valeur un coin, une étagère ou une œuvre."
+      ],
+      "h2": "Choisissez des ampoules chaudes",
+      "p2": "Les ampoules blanc chaud adoucissent l'aspect du bois et des tissus. Le blanc froid convient mieux aux cuisines et aux espaces de travail.",
+      "h3": "Laissez les miroirs vous aider",
+      "p3": "Un grand miroir placé face à une fenêtre fait entrer la lumière du jour plus profondément dans la pièce."
+    },
+    "blog_4": {
+      "title": "Optimiser les plans d'un petit appartement",
+      "date": "20 févr. 2026",
+      "excerpt": "Des choix de meubles malins pour gagner de l'espace de vie dans un petit appartement.",
+      "p1": "Un petit appartement peut paraître ouvert et confortable si chaque meuble a un rôle. L'objectif est de bien utiliser les murs et les coins, et de garder le sol le plus dégagé possible.",
+      "h1": "Montez plutôt que de vous étaler",
+      "p2": "Les étagères murales et les meubles suspendus libèrent le sol et agrandissent visuellement la pièce. Gardez le bas du mur pour ce que vous utilisez tous les jours.",
+      "h2": "Choisissez des meubles à double usage",
+      "ul1": [
+        "Une table d'appoint qui porte aussi une lampe et vos livres.",
+        "Un bureau qui se relève pour travailler debout et s'abaisse pour s'asseoir.",
+        "Un meuble TV avec rangement fermé pour les câbles et les jeux."
+      ],
+      "h3": "Mesurez d'abord",
+      "p3": "Avant de commander, mesurez la pièce, la porte et l'escalier. Prévoyez au moins 80 cm d'espace de circulation sur les passages principaux."
+    },
+    "blog_5": {
+      "title": "Matériaux durables pour une décoration haut de gamme",
+      "date": "2 mars 2026",
+      "excerpt": "Ce qu'il faut rechercher pour des meubles plus respectueux de l'environnement et plus durables.",
+      "p1": "Le meuble le plus durable est celui que l'on garde vingt ans. Des matériaux de qualité et une construction solide comptent plus que n'importe quel label.",
+      "h1": "Ce qu'il faut rechercher",
+      "ul1": [
+        "Du bois massif issu de forêts gérées de manière responsable.",
+        "Des fibres naturelles comme la laine, le lin et le coton.",
+        "Des finitions à base d'eau, sans danger pour les enfants.",
+        "Des assemblages réparables, et non collés une fois pour toutes puis jetés."
+      ],
+      "h2": "Prenez-en soin",
+      "p2": "Dépoussiérez le bois avec un chiffon doux et sec, essuyez immédiatement les taches, et gardez le bois et le cuir à l'écart du soleil direct et des radiateurs. De petites habitudes gardent vos meubles beaux pendant des années."
+    }
+  },
+  "products": {
+    "lum_001": { "name": "Fauteuil bouclé Aveline", "description": "Une structure architecturale habillée d'un luxueux tissu bouclé au toucher texturé." },
+    "lum_002": { "name": "Tabouret de bar scandinave Soren", "description": "Structure en chêne massif avec une assise ergonomique aux courbes douces et confortables." },
+    "lum_003": { "name": "Cadre de lit en noyer nordique", "description": "Noyer noir de première qualité, aux veinages marqués, associé à des assemblages à tenon et mortaise sur mesure." },
+    "lum_004": { "name": "Chaise d'appoint Elysian en velours", "description": "Structure à dossier haut aux courbes douces, rembourrée d'une mousse dense à haute résilience." },
+    "lum_005": { "name": "Table basse en verre Tessera", "description": "Plateau de verre trempé épais aux lignes géométriques, posé sur des bases massives aux formes organiques." },
+    "lum_006": { "name": "Bureau de direction Vanguard", "description": "Bureau à l'esprit industriel épuré, équipé de panneaux dissimulant les câbles." },
+    "lum_007": { "name": "Chaise de salle à manger moderne milieu de siècle", "description": "Pieds fuselés en bois dur massif supportant des assises en tissu premium très résistant." },
+    "lum_008": { "name": "Table de salle à manger ronde Monolith", "description": "Pied central en micro-ciment brossé texturé supportant un plateau aux bords chanfreinés." },
+    "lum_009": { "name": "Commode à six tiroirs Altas", "description": "Tiroirs sans poignée à ouverture par pression, avec glissières silencieuses et fluides de qualité luxe." },
+    "lum_010": { "name": "Ensemble table de jeu Junior en bois naturel", "description": "Écologique et sans danger pour les enfants, non toxique, avec des bords en bois arrondis pensés pour jouer activement." },
+    "lum_011": { "name": "Étagères de cuisine modulaires Modena", "description": "Cadres en acier résistant à l'eau, laqués par poudrage, associés à des lattes de chêne sur mesure." },
+    "lum_012": { "name": "Lampe plissée en travertin Aura", "description": "Base en bloc de travertin crème brut et poli, associée à un abat-jour en lin à la lumière chaude et diffuse." },
+    "lum_013": { "name": "Canapé modulable architectural Linea", "description": "Canapé d'angle bas et très profond, habillé de superbes tissus aux teintes neutres et texturées." },
+    "lum_014": { "name": "Miroir sur pied arqué minimaliste", "description": "Verre haute définition ultra-clair, sur toute la hauteur, dans un fin cadre en alliage anodisé noir." },
+    "lum_015": { "name": "Table de chevet flottante en noyer Solis", "description": "Rangement de chevet mural et gain de place, doté d'un seul tiroir à fermeture douce." },
+    "lum_016": { "name": "Chaise de bureau ergonomique Kendal", "description": "Dossier en maille respirante, soutien lombaire réglable et base fluide pour de longues journées de travail." },
+    "lum_017": { "name": "Bureau réglable en hauteur Altura", "description": "Bureau électrique assis-debout avec plateau en chêne massif, mémoires de position et câbles bien rangés." },
+    "lum_018": { "name": "Salon de jardin en teck Terra", "description": "Structures en teck massif résistantes aux intempéries et coussins à séchage rapide, pour balcons et jardins." },
+    "lum_019": { "name": "Chaise d'extérieur tressée Palma", "description": "Structure légère en aluminium recouverte de corde tressée tout temps, confortable et empilable." },
+    "lum_020": { "name": "Tapis en laine tissé à la main Dune", "description": "Laine douce tissée à la main dans des tons neutres chaleureux, pour apporter texture et confort sous les pieds." },
+    "lum_021": { "name": "Étagères murales flottantes Vela", "description": "Fines étagères murales en chêne qui libèrent le sol et mettent en valeur livres et objets déco." },
+    "lum_022": { "name": "Table d'appoint ronde Nova", "description": "Table ronde compacte à base métallique robuste, avec une tablette cachée pour livres et lampes." },
+    "lum_023": { "name": "Buffet en noyer Hartley", "description": "Buffet en noyer avec portes à fermeture douce et de généreux rangements pour la salle à manger et le salon." },
+    "lum_024": { "name": "Table en chêne massif Fjord", "description": "Table en chêne massif au veinage naturel bien visible et aux bords arrondis, conçue pour l'usage quotidien en famille." },
+    "lum_025": { "name": "Malle de rangement Marlow", "description": "Malle de rangement en bois massif finie à la main, avec coins en laiton, idéale au pied d'un lit." },
+    "lum_026": { "name": "Meuble TV Lund", "description": "Meuble TV bas avec rangement fermé pour câbles et jeux, finition chêne naturel." },
+    "lum_027": { "name": "Armoire à trois portes Carrow", "description": "Armoire spacieuse avec portes à fermeture douce, penderie et étagères réglables, dans une finition mate apaisante." }
+  },
+  "product_categories": {
+    "armchair": "Fauteuil",
+    "bar_stool": "Tabouret de bar",
+    "bed": "Lit",
+    "chair": "Chaise",
+    "coffee_table": "Table basse",
+    "desk": "Bureau",
+    "dining_chair": "Chaise de salle à manger",
+    "dining_table": "Table de salle à manger",
+    "dresser": "Commode",
+    "kids": "Enfants",
+    "kitchen": "Cuisine",
+    "lamp": "Lampe",
+    "living_room": "Salon",
+    "mirror": "Miroir",
+    "nightstand": "Table de chevet",
+    "office_chair": "Chaise de bureau",
+    "office_desk": "Bureau de travail",
+    "outdoor": "Extérieur",
+    "outdoor_chair": "Chaise d'extérieur",
+    "rug": "Tapis",
+    "shelves": "Étagères",
+    "side_table": "Table d'appoint",
+    "sideboard": "Buffet",
+    "table": "Table",
+    "trunk": "Malle",
+    "tv_unit": "Meuble TV",
+    "wardrobe": "Armoire"
+  },
+  "footer": {
+    "tagline": "Des meubles apaisants et bien fabriqués, livrés et installés par notre propre équipe.",
+    "trust": {
+      "delivery": "Livraison et installation par notre propre équipe",
+      "returns": "Retours faciles sous 7 jours",
+      "warranty": "Garantie de 1 an",
+      "cod": "Paiement à la livraison disponible"
+    },
+    "socials": { "facebook": "Facebook", "instagram": "Instagram", "youtube": "YouTube" },
+    "aria": { "footer_nav": "Pied de page" },
+    "columns": {
+      "shop": {
+        "title": "Boutique",
+        "links": {
+          "all_furniture": "Tous les meubles",
+          "living_room": "Salon",
+          "bedroom": "Chambre",
+          "dining": "Salle à manger",
+          "office": "Bureau",
+          "new_arrivals": "Nouveautés"
+        }
+      },
+      "company": {
+        "title": "Entreprise",
+        "links": {
+          "about_us": "À propos de nous",
+          "blog": "Blog",
+          "book_a_team": "Réserver une équipe",
+          "contact": "Contact"
+        }
+      },
+      "help": {
+        "title": "Aide",
+        "links": {
+          "faq": "FAQ",
+          "shipping_and_returns": "Livraison et retours",
+          "track_your_order": "Suivre ma commande",
+          "my_account": "Mon compte",
+          "wishlist": "Liste d'envies"
+        }
+      }
+    },
+    "legal": { "privacy": "Confidentialité", "terms": "Conditions" },
+    "copyright": "© {{year}} {{name}}. Tous droits réservés.",
+    "back_to_top": "Retour en haut"
+  },
+  "sidebar": {
+    "title": "Acheter par catégorie",
+    "categories_count": "{{total}} catégories",
+    "close": "Fermer les catégories",
+    "search": "Rechercher une catégorie",
+    "all_furniture": "Tous les meubles",
+    "no_category": "Aucune catégorie trouvée pour « {{query}} ».",
+    "all_categories": "Toutes les catégories",
+    "piece": "{{total}} pièce",
+    "pieces": "{{total}} pièces",
+    "shop_all": "Tout voir",
+    "photo_alt": "{{name}}, photo {{n}}",
+    "help_title": "Besoin d'aide pour l'installation ?",
+    "help_subtitle": "Réservez une équipe à l'heure"
+  },
+  "home": {
+    "hero": {
+      "image_alt": "Salon moderne avec des meubles Lumina Home",
+      "title": "Des meubles qui transforment une maison en foyer",
+      "subtitle": "Bois massif, tissus doux et design discret, livrés et installés par notre propre équipe.",
+      "shop_now": "Acheter maintenant",
+      "see_new_arrivals": "Voir les nouveautés"
+    },
+    "categories": {
+      "text": "Trouvez le meuble qu'il vous faut, pièce par pièce.",
+      "view_all": "Voir toutes les catégories"
+    },
+    "products": {
+      "title": "Notre sélection pour vous",
+      "view_all": "Voir tous les produits",
+      "groups_aria": "Groupes de produits",
+      "tab_new": "Nouveautés",
+      "tab_top": "Les mieux notés"
+    },
+    "promo": {
+      "living_title": "Soldes salon",
+      "living_text": "Canapés, fauteuils et tables pour la pièce que vous utilisez le plus.",
+      "bedroom_title": "L'essentiel pour la chambre",
+      "bedroom_text": "Lits, tables de chevet et armoires pour mieux dormir.",
+      "shop_now": "Acheter"
+    },
+    "trust": {
+      "delivery": { "title": "Livraison et installation", "text": "Notre équipe l'apporte et l'installe." },
+      "returns": { "title": "Retours faciles", "text": "Retournez les articles non utilisés sous {{days}} jours." },
+      "warranty": { "title": "Garantie de 1 an", "text": "Couverture contre les défauts de fabrication." },
+      "cod": { "title": "Paiement à la livraison", "text": "Payez à la réception de vos meubles." }
+    },
+    "blog": {
+      "title": "Notre journal",
+      "text": "Idées et guides pour une maison plus agréable.",
+      "read_all": "Lire tous les articles"
+    },
+    "newsletter": {
+      "title": "Recevez en avant-première nos nouveaux modèles et offres",
+      "text": "Un e-mail par mois. Désabonnement à tout moment.",
+      "thanks": "Merci, vous êtes inscrit(e)."
+    }
+  },
+  "newsletter": {
+    "eyebrow": "Newsletter",
+    "title": "Rejoignez notre communauté",
+    "subtitle": "Profitez d'un accès anticipé aux nouvelles collections et de 10 % de réduction sur votre première commande.",
+    "thank_you": "Merci de votre inscription !",
+    "email_label": "Adresse e-mail",
+    "email_placeholder": "Votre adresse e-mail",
+    "subscribe": "S'abonner"
+  },
+  "auth": {
+    "image_alt": "Intérieur de luxe Lumina Home",
+    "email_label": "Adresse e-mail",
+    "email_placeholder": "nom@exemple.com",
+    "password_label": "Mot de passe",
+    "back_to_signin": "Retour à la connexion",
+    "errors": {
+      "email_required": "L'adresse e-mail est obligatoire.",
+      "email_invalid": "Saisissez une adresse e-mail valide.",
+      "password_required": "Le mot de passe est obligatoire.",
+      "new_password_required": "Le nouveau mot de passe est obligatoire.",
+      "name_required": "Le nom complet est obligatoire.",
+      "password_min": "Le mot de passe doit contenir au moins 8 caractères.",
+      "confirm_required": "Veuillez confirmer votre mot de passe.",
+      "passwords_mismatch": "Les mots de passe ne correspondent pas.",
+      "terms_required": "Vous devez accepter les conditions pour continuer."
+    },
+    "login": {
+      "title": "Bon retour",
+      "subtitle": "Connectez-vous à votre compte pour continuer.",
+      "forgot_password": "Mot de passe oublié ?",
+      "submit": "Se connecter",
+      "or_continue": "Ou continuer avec",
+      "new_to": "Nouveau chez Lumina Home ?",
+      "create_account": "Créer un compte"
+    },
+    "register": {
+      "title": "Créer un compte",
+      "subtitle": "Rejoignez Lumina Home pour enregistrer vos favoris et suivre vos commandes.",
+      "full_name": "Nom complet",
+      "full_name_placeholder": "Votre nom complet",
+      "password_placeholder": "8 caractères minimum",
+      "confirm_password": "Confirmer le mot de passe",
+      "confirm_placeholder": "Répétez le mot de passe",
+      "terms_agreement": "J'accepte les <terms>Conditions d'utilisation</terms> et la <privacy>Politique de confidentialité</privacy>.",
+      "submit": "Créer un compte",
+      "or_sign_up_with": "Ou s'inscrire avec",
+      "already_have_account": "Vous avez déjà un compte ?",
+      "sign_in": "Se connecter"
+    },
+    "forgot": {
+      "title": "Mot de passe oublié ?",
+      "subtitle": "Saisissez votre adresse e-mail et nous vous enverrons un lien pour réinitialiser votre mot de passe.",
+      "submit": "Envoyer le lien",
+      "remembered": "Vous vous en souvenez ?",
+      "sent_title": "Consultez votre boîte mail",
+      "sent_text": "Si un compte existe pour <email>{{email}}</email>, nous avons envoyé un lien pour réinitialiser votre mot de passe. Il peut mettre quelques minutes à arriver.",
+      "use_different_email": "Utiliser une autre adresse e-mail"
+    },
+    "reset": {
+      "title": "Réinitialiser le mot de passe",
+      "subtitle": "Choisissez un nouveau mot de passe pour votre compte.",
+      "new_password": "Nouveau mot de passe",
+      "confirm_new_password": "Confirmer le nouveau mot de passe",
+      "confirm_placeholder": "Répétez le nouveau mot de passe",
+      "submit": "Mettre à jour le mot de passe",
+      "done_title": "Mot de passe mis à jour",
+      "done_text": "Votre mot de passe a été modifié. Vous pouvez maintenant vous connecter avec votre nouveau mot de passe.",
+      "go_to_signin": "Aller à la connexion"
+    }
+  },
+  "about": {
+    "banner_alt": "À l'intérieur du showroom Lumina Home",
+    "title": "À propos de Lumina Home",
+    "subtitle": "Des meubles apaisants et bien fabriqués, pour votre façon de vivre.",
+    "story": {
+      "title": "Notre histoire",
+      "p1": "Lumina Home est née d'une idée simple : un beau meuble doit être chaleureux, intemporel et honnête sur la façon dont il est fabriqué.",
+      "p2": "Nos designers et nos artisans travaillent ensemble sur chaque pièce, du premier croquis à la finition. Nous choisissons les matériaux avec soin et testons chaque modèle pour son confort et sa solidité avant qu'il ne vous parvienne.",
+      "p3": "Nous livrons et installons nous-mêmes les meubles, afin qu'ils arrivent chez vous comme il se doit."
+    },
+    "values": {
+      "heading": "Nos valeurs",
+      "honest": {
+        "title": "Des matériaux honnêtes",
+        "text": "Bois massif, vrai cuir et tissus de qualité. Nous vous disons exactement de quoi chaque pièce est faite."
+      },
+      "durable": {
+        "title": "Faits pour durer",
+        "text": "Des assemblages solides et une finition soignée, pour que vos meubles restent beaux des années, et pas seulement une saison."
+      },
+      "care": {
+        "title": "À votre écoute",
+        "text": "Du premier message à l'installation chez vous, une vraie personne de notre équipe est à vos côtés."
+      }
+    },
+    "services": {
+      "heading": "Livraison et installation",
+      "text": "Nos propres équipes livrent, montent et placent vos meubles, pour que vous n'ayez rien à faire."
+    },
+    "team": {
+      "heading": "Rencontrez l'équipe",
+      "text": "Les personnes derrière chaque pièce."
+    },
+    "testimonials": {
+      "heading": "Ce que disent nos clients",
+      "quote": "« {{review}} »"
+    },
+    "cta": {
+      "title": "Prêt à meubler votre maison ?",
+      "browse": "Parcourir la boutique",
+      "talk": "Parler à notre équipe"
+    }
+  },
+  "contact": {
+    "banner_alt": "Showroom Lumina Home",
+    "title": "Nous contacter",
+    "subtitle": "Une question sur un produit ou une commande ? Nous répondons sous un jour ouvré.",
+    "get_in_touch": "Contactez-nous",
+    "hours_value": "Du lundi au samedi, de 10 h à 19 h",
+    "details": {
+      "phone": "Téléphone",
+      "email": "E-mail",
+      "showroom": "Showroom",
+      "hours": "Horaires"
+    },
+    "errors": {
+      "name_required": "Votre nom est obligatoire.",
+      "message_required": "Veuillez écrire un message.",
+      "message_min": "Le message doit contenir au moins 10 caractères."
+    },
+    "sent_title": "Message envoyé",
+    "sent_text": "Merci, {{name}}. Nous répondrons à {{email}} sous un jour ouvré.",
+    "send_another": "Envoyer un autre message",
+    "form_title": "Envoyez-nous un message",
+    "phone_optional": "Téléphone (facultatif)",
+    "message_label": "Message",
+    "message_placeholder": "Comment pouvons-nous vous aider ?",
+    "send": "Envoyer le message"
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "intro": "Des réponses rapides sur les commandes, la livraison, les retours et l'entretien.",
+    "more_title": "Vous n'avez pas trouvé votre réponse ?",
+    "more_text": "Consultez notre page <shipping>Livraison et retours</shipping> ou <contact>contactez-nous</contact>. Nous répondons sous un jour ouvré.",
+    "groups": {
+      "orders": {
+        "heading": "Commandes et paiement",
+        "place_order": {
+          "title": "Comment passer une commande ?",
+          "content": "Ajoutez les articles qui vous plaisent à votre panier, passez à la caisse, saisissez votre adresse de livraison et choisissez un mode de paiement. Vous recevrez un e-mail de confirmation une fois la commande passée."
+        },
+        "payment": {
+          "title": "Quels modes de paiement acceptez-vous ?",
+          "content": "Vous pouvez payer à la livraison, par carte ou par virement bancaire. Les options disponibles s'affichent lors du paiement."
+        },
+        "change_cancel": {
+          "title": "Puis-je modifier ou annuler ma commande ?",
+          "content": "Oui, avant son expédition. Écrivez-nous ou appelez-nous avec votre numéro de commande dès que possible. Les articles fabriqués sur mesure ne peuvent plus être annulés une fois la production lancée."
+        }
+      },
+      "delivery": {
+        "heading": "Livraison et installation",
+        "how_long": {
+          "title": "Combien de temps prend la livraison ?",
+          "content": "La plupart des commandes arrivent en 3 à 8 jours ouvrés, selon votre ville. Les articles fabriqués sur mesure demandent 2 à 3 semaines. Le délai estimé est indiqué sur chaque fiche produit."
+        },
+        "assembly": {
+          "title": "Montez-vous les meubles pour moi ?",
+          "content": "Oui. Notre équipe de livraison apporte les meubles à l'intérieur et les installe où vous le souhaitez, sans frais supplémentaires."
+        },
+        "tracking": {
+          "title": "Comment suivre ma commande ?",
+          "content": "Nous envoyons les informations de suivi par e-mail et par SMS dès l'expédition de votre commande. Vous pouvez aussi nous appeler avec votre numéro de commande pour avoir des nouvelles."
+        }
+      },
+      "returns": {
+        "heading": "Retours et garantie",
+        "return_policy": {
+          "title": "Quelle est votre politique de retour ?",
+          "content": "Vous pouvez retourner les articles non utilisés dans leur emballage d'origine dans les {{days}} jours suivant la livraison. Les articles fabriqués sur mesure et les articles en vente finale ne peuvent pas être retournés."
+        },
+        "damaged": {
+          "title": "Et si mon meuble arrive endommagé ?",
+          "content": "Contactez-nous dans les 48 heures suivant la livraison, en indiquant votre numéro de commande et en joignant des photos. Nous le réparerons, le remplacerons ou vous rembourserons, et nous prenons en charge l'enlèvement."
+        },
+        "warranty": {
+          "title": "Y a-t-il une garantie ?",
+          "content": "Nos meubles sont garantis 1 an contre les défauts de fabrication. La garantie ne couvre pas l'usure normale, le mauvais usage ni les dommages dus à l'humidité et au soleil."
+        }
+      },
+      "products": {
+        "heading": "Produits et entretien",
+        "colour": {
+          "title": "La couleur correspondra-t-elle aux photos ?",
+          "content": "Nous essayons de montrer les couleurs le plus fidèlement possible, mais les écrans diffèrent légèrement. Si vous voulez en être sûr, contactez-nous et nous vous enverrons des photos supplémentaires de la pièce."
+        },
+        "care": {
+          "title": "Comment nettoyer et entretenir mes meubles ?",
+          "content": "Dépoussiérez le bois avec un chiffon doux et sec et essuyez immédiatement les éclaboussures. Gardez le bois et le cuir à l'abri du soleil direct et des radiateurs. Les meubles en tissu peuvent être aspirés délicatement chaque semaine."
+        }
+      }
+    }
+  },
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "intro": "Chez <brand>{{name}}</brand>, nous respectons votre vie privée et nous nous engageons à protéger vos données personnelles. Cette politique de confidentialité explique comment nous protégeons vos données personnelles lorsque vous visitez notre boutique de meubles et vous informe de vos droits en matière de vie privée.",
+    "s1": {
+      "title": "1. Les informations que nous collectons",
+      "intro": "Nous pouvons collecter, utiliser, conserver et transférer différents types de données personnelles vous concernant, que nous avons regroupées comme suit :",
+      "identity_label": "Données d'identité :",
+      "identity_text": "comprennent le prénom, le nom et le nom d'utilisateur.",
+      "contact_label": "Données de contact :",
+      "contact_text": "comprennent l'adresse de facturation, l'adresse de livraison, l'adresse e-mail et les numéros de téléphone.",
+      "transaction_label": "Données de transaction :",
+      "transaction_text": "comprennent les détails des paiements effectués vers et depuis vous, ainsi que les informations sur les produits que vous nous avez achetés."
+    },
+    "s2": {
+      "title": "2. Comment nous utilisons vos données",
+      "intro": "Nous n'utiliserons vos données personnelles que lorsque la loi nous y autorise. Le plus souvent, nous les utiliserons dans les cas suivants :",
+      "item1": "Pour vous enregistrer en tant que nouveau client.",
+      "item2": "Pour traiter et livrer vos commandes de meubles, y compris la gestion des paiements, des frais et des charges.",
+      "item3": "Pour gérer notre relation avec vous, notamment en vous informant des modifications de nos conditions ou de notre politique de confidentialité."
+    },
+    "s3": {
+      "title": "3. Sécurité des données",
+      "text": "Nous avons mis en place des mesures de sécurité appropriées pour empêcher que vos données personnelles ne soient accidentellement perdues, utilisées ou consultées de manière non autorisée, modifiées ou divulguées. De plus, nous limitons l'accès à vos données personnelles aux employés, agents, sous-traitants et autres tiers qui ont besoin d'y accéder dans le cadre de leur activité."
+    },
+    "s4": {
+      "title": "4. Nous contacter",
+      "text": "Si vous avez des questions sur cette politique de confidentialité ou sur nos pratiques en matière de confidentialité, veuillez contacter notre service d'assistance :",
+      "email_label": "E-mail :"
+    }
+  },
+  "shipping": {
+    "title": "Livraison et retours",
+    "intro": "Comment nous livrons vos meubles, et que faire si quelque chose ne va pas.",
+    "areas": {
+      "major": "Grandes villes ({{cities}})",
+      "other": "Autres villes et communes",
+      "made_to_order": "Articles fabriqués sur mesure"
+    },
+    "times": {
+      "major": "3 à 5 jours ouvrés",
+      "other": "5 à 8 jours ouvrés",
+      "made_to_order": "2 à 3 semaines"
+    },
+    "delivery": {
+      "title": "Zones et délais de livraison",
+      "text": "Nous livrons dans tout le pays. Le délai de livraison court à partir de la confirmation de votre commande.",
+      "col_area": "Zone",
+      "col_time": "Délai de livraison"
+    },
+    "charges": {
+      "title": "Frais de livraison",
+      "free": "Livraison gratuite pour toute commande supérieure à {{amount}}.",
+      "flat": "Des frais fixes de {{fee}} s'appliquent à toutes les autres commandes.",
+      "shown": "Les frais de livraison sont affichés lors du paiement, avant que vous ne payiez."
+    },
+    "setup": {
+      "title": "Livraison et installation",
+      "p1": "Notre équipe de livraison apporte les meubles à l'intérieur de votre domicile et les installe où vous le souhaitez. Veuillez vous assurer que quelqu'un est présent pour recevoir la commande et la vérifier avec notre équipe.",
+      "p2": "Avant leur départ, vérifiez que les articles ne sont pas endommagés. Si quelque chose est abîmé, signalez-le immédiatement à l'équipe de livraison et prenez une photo."
+    },
+    "payment": {
+      "title": "Modes de paiement",
+      "cod": "Paiement à la livraison",
+      "online": "Paiement en ligne par carte ou virement bancaire"
+    },
+    "returns": {
+      "title": "Retours sous {{days}} jours",
+      "text": "Vous pouvez retourner un article dans les {{days}} jours suivant la livraison s'il n'a pas été utilisé, s'il est dans son emballage d'origine et dans l'état où vous l'avez reçu.",
+      "not_returnable": "Ces articles ne peuvent pas être retournés :",
+      "item1": "Les meubles fabriqués sur mesure ou personnalisés",
+      "item2": "Les articles utilisés, mal montés ou endommagés après la livraison",
+      "item3": "Les articles en liquidation marqués « vente finale »"
+    },
+    "damaged": {
+      "title": "Articles endommagés ou erronés",
+      "text": "Si votre article arrive endommagé, défectueux ou ne correspond pas à votre commande, contactez-nous dans les 48 heures suivant la livraison avec votre numéro de commande et des photos. Nous le réparerons, le remplacerons ou vous rembourserons, et nous prenons en charge les frais d'enlèvement."
+    },
+    "how_to": {
+      "title": "Comment lancer un retour",
+      "step1": "Écrivez à {{email}} ou appelez le {{phone}} en indiquant votre numéro de commande et le motif.",
+      "step2": "Nous confirmons votre retour et organisons l'enlèvement.",
+      "step3": "Après vérification de l'article, votre remboursement est envoyé sur votre mode de paiement d'origine dans un délai de 5 à 7 jours ouvrés."
+    },
+    "question": {
+      "title": "Une autre question ?",
+      "text": "Consultez notre <faq>FAQ</faq> ou <contact>contactez-nous</contact>. Nous répondons sous un jour ouvré."
+    }
+  },
+  "terms": {
+    "title": "Conditions d'utilisation",
+    "intro": "En utilisant le site web {{store}} ou en passant une commande, vous acceptez les présentes conditions. Veuillez les lire attentivement.",
+    "using": {
+      "title": "Utilisation de notre site",
+      "text": "Vous devez avoir au moins 18 ans, ou l'autorisation d'un parent ou d'un tuteur, pour passer une commande. Vous vous engagez à fournir des informations exactes et à garder votre mot de passe confidentiel."
+    },
+    "products": {
+      "title": "Produits et prix",
+      "item1": "Nous essayons de présenter les couleurs, les dimensions et les matériaux avec exactitude, mais de petites différences sont possibles.",
+      "item2": "Les prix et les stocks peuvent changer sans préavis.",
+      "item3": "Si un prix ou une description est erroné, nous pouvons annuler la commande et vous rembourser intégralement."
+    },
+    "orders": {
+      "title": "Commandes et paiement",
+      "text": "Une commande est acceptée dès que nous vous envoyons une confirmation. Nous pouvons refuser ou annuler une commande si un article est en rupture de stock, si le paiement échoue ou si nous soupçonnons une fraude. Le paiement doit être effectué comme indiqué lors du passage en caisse."
+    },
+    "delivery": {
+      "title": "Livraison, retours et remboursements",
+      "text": "Les délais et frais de livraison, les retours et les remboursements sont expliqués sur notre page <shipping>Livraison et retours</shipping>, qui fait partie des présentes conditions."
+    },
+    "warranty": {
+      "title": "Garantie",
+      "text": "Nos meubles bénéficient d'une garantie de 1 an contre les défauts de fabrication. La garantie ne couvre pas l'usure normale, les accidents, le mauvais usage, les dégâts d'humidité ni les modifications apportées au meuble après la livraison."
+    },
+    "ip": {
+      "title": "Propriété intellectuelle",
+      "text": "Toutes les photos, tous les textes, logos et créations de ce site appartiennent à {{store}}. Vous ne pouvez ni les copier ni les utiliser sans notre autorisation écrite."
+    },
+    "liability": {
+      "title": "Limitation de responsabilité",
+      "text": "Dans la mesure permise par la loi, {{store}} n'est pas responsable des pertes ou dommages indirects résultant de l'utilisation du site ou de nos produits. Rien dans ces conditions ne limite vos droits légaux en tant que consommateur."
+    },
+    "changes": {
+      "title": "Modification des conditions",
+      "text": "Nous pouvons mettre à jour ces conditions de temps à autre. Continuer à utiliser le site après une modification signifie que vous acceptez les nouvelles conditions."
+    },
+    "law": {
+      "title": "Droit applicable",
+      "text": "Les présentes conditions sont régies par les lois de {{country}}."
+    },
+    "contact": {
+      "title": "Nous contacter",
+      "text": "Des questions sur ces conditions ? Écrivez à {{email}} ou consultez notre <contact>page de contact</contact>."
+    }
+  },
+  "booking": {
+    "title": "Réserver une équipe",
+    "intro": "Choisissez les personnes dont vous avez besoin et le nombre d'heures. Vous payez l'équipe et le temps, et vous voyez le coût de la main-d'œuvre avant de réserver.",
+    "received_title": "Réservation reçue",
+    "received_text": "Merci, {{name}}. Nous vous appellerons au {{phone}} pour confirmer votre équipe le <date>{{date}}</date> ({{slot}}).",
+    "your_team": "Votre équipe",
+    "per_hour_each": "{{price}} par heure et par personne",
+    "per_hour": "{{price}} par heure",
+    "team_members": "Membres de l'équipe",
+    "hours": "Heures",
+    "hours_label": "Heures de travail",
+    "hours_option": "{{hours}} heures",
+    "min_hours": "La réservation minimale est de {{hours}} heures.",
+    "estimated_cost": "Coût estimé de la main-d'œuvre",
+    "estimated_total": "Total estimé",
+    "estimate_note": "Il s'agit d'une estimation pour la main-d'œuvre uniquement. Nous confirmons le coût final par téléphone.",
+    "another": "Faire une autre réservation",
+    "continue_shopping": "Continuer mes achats",
+    "quick_packages": "Forfaits rapides",
+    "step1_title": "1. Choisissez votre équipe",
+    "step1_text": "Les tarifs sont par personne et par heure.",
+    "step2_title": "2. Combien d'heures ?",
+    "step3_title": "3. Où et quand",
+    "count_aria": "Quantité : {{role}}",
+    "remove_one": "Retirer un : {{role}}",
+    "add_one": "Ajouter un : {{role}}",
+    "address": "Adresse",
+    "address_placeholder": "Numéro, rue, quartier",
+    "date": "Date souhaitée",
+    "start_time": "Heure de début",
+    "notes_label": "Que faut-il faire ? (facultatif)",
+    "notes_placeholder": "Par exemple : monter un lit et une armoire, 3e étage, ascenseur disponible",
+    "labour_cost": "Coût de la main-d'œuvre",
+    "empty_summary": "Choisissez les membres de votre équipe et le coût s'affichera ici.",
+    "rate_times_hours": "{{price}} × {{hours}} heures",
+    "team_rate": "Tarif de l'équipe par heure",
+    "submit": "Réserver cette équipe",
+    "summary_note": "Main-d'œuvre uniquement. Les meubles et la livraison sont facturés séparément. Nous confirmons le coût final par téléphone avant la visite.",
+    "errors": {
+      "team": "Choisissez au moins un membre de l'équipe.",
+      "address_required": "L'adresse est obligatoire.",
+      "date_required": "Choisissez une date.",
+      "date_past": "Choisissez une date à partir de demain."
+    },
+    "roles": {
+      "carpenter": { "title": "Menuisier", "text": "Monte les lits, armoires, tables et autres meubles." },
+      "helper": { "title": "Aide", "text": "Porte, déballe et place les meubles." },
+      "installer": { "title": "Installateur", "text": "Pose les étagères murales, miroirs, meubles TV et luminaires." },
+      "polisher": { "title": "Finisseur", "text": "Retouche les rayures et restaure la finition des pièces en bois." },
+      "designer": { "title": "Décorateur d'intérieur", "text": "Conçoit l'agencement et la décoration de votre pièce sur place." }
+    },
+    "presets": {
+      "assembly": { "name": "Montage de meubles", "text": "Deux menuisiers et un aide pendant 3 heures, idéal pour les lits et les armoires." },
+      "wall_fitting": { "name": "Fixation murale", "text": "Un installateur et un aide pendant 2 heures, pour étagères, miroirs et meubles TV." },
+      "full_setup": { "name": "Installation complète d'une pièce", "text": "Deux menuisiers, deux aides et un décorateur pendant 5 heures." }
+    },
+    "time_slots": {
+      "morning": "Matin",
+      "afternoon": "Après-midi",
+      "evening": "Soir"
+    }
+  },
+  "cart": {
+    "each": "{{price}} l'unité",
+    "quantity_of": "Quantité de {{name}}",
+    "remove": "Supprimer",
+    "empty_title": "Votre panier est vide",
+    "empty_text": "Ajoutez un meuble qui vous plaît, il vous attendra ici.",
+    "browse_shop": "Parcourir la boutique",
+    "title_count": "Panier ({{total}})",
+    "clear": "Vider le panier",
+    "summary": "Récapitulatif de la commande",
+    "add_more_free": "Ajoutez {{amount}} pour bénéficier de la livraison gratuite.",
+    "free_delivery_unlocked": "Vous bénéficiez de la livraison gratuite.",
+    "subtotal": "Sous-total",
+    "delivery": "Livraison",
+    "free": "Gratuite",
+    "total": "Total",
+    "checkout": "Passer la commande"
+  },
+  "checkout": {
+    "title": "Finaliser la commande",
+    "empty_title": "Rien à régler",
+    "empty_text": "Votre panier est vide. Ajoutez d'abord un article, puis revenez ici.",
+    "delivery_details": "Informations de livraison",
+    "delivery_address": "Adresse de livraison",
+    "notes_label": "Remarques pour la livraison (facultatif)",
+    "notes_placeholder": "Étage, point de repère, meilleur moment pour appeler",
+    "payment": {
+      "title": "Paiement",
+      "method": "Mode de paiement",
+      "cod_label": "Paiement à la livraison",
+      "cod_text": "Payez en espèces à la réception de vos meubles.",
+      "bank_label": "Carte ou virement bancaire",
+      "bank_text": "Nous vous envoyons les informations de paiement après votre commande."
+    },
+    "your_order": "Votre commande",
+    "place_order": "Valider la commande",
+    "agreement": "En passant votre commande, vous acceptez nos <terms>Conditions</terms> et notre <returns>Politique de retour</returns>.",
+    "estimated_delivery": "3 à 8 jours ouvrés",
+    "errors": {
+      "phone_required": "Le numéro de téléphone est obligatoire.",
+      "phone_invalid": "Saisissez un numéro de téléphone valide.",
+      "address_required": "L'adresse de livraison est obligatoire.",
+      "city_required": "La ville est obligatoire."
+    }
+  },
+  "product": {
+    "add_to_cart": "Ajouter au panier",
+    "photo_alt": "{{name}}, photo {{n}}",
+    "show_photo": "Afficher la photo {{n}}",
+    "rating_text": "{{rating}} ({{reviews}} avis)",
+    "in_stock": "En stock",
+    "out_of_stock": "Rupture de stock",
+    "quantity": "Quantité",
+    "added_to_cart": "Ajouté au panier",
+    "added": "Ajouté",
+    "qty_added": "{{quantity}} ajouté(s).",
+    "view_cart": "Voir le panier",
+    "trust_delivery": "Livraison et installation",
+    "trust_returns": "Retours sous {{days}} jours",
+    "trust_warranty": "Garantie de 1 an",
+    "sku": "Réf. : {{sku}}",
+    "related_title": "Vous aimerez aussi",
+    "details_title": "Détails du produit",
+    "details_text": "{{description}} Réf. : {{sku}}. Catégorie : {{category}}.",
+    "delivery_title": "Livraison et installation",
+    "delivery_text": "La livraison prend de 3 à 8 jours ouvrés selon votre ville. Notre propre équipe apporte les meubles à l'intérieur et les installe où vous le souhaitez, sans frais supplémentaires.",
+    "returns_title": "Retours et garantie",
+    "returns_text": "Retournez les articles non utilisés dans leur emballage d'origine dans les {{days}} jours suivant la livraison. Cette pièce est garantie 1 an contre les défauts de fabrication.",
+    "not_found_title": "Produit introuvable",
+    "not_found_text": "Ce produit a peut-être été retiré ou le lien est incorrect.",
+    "back_to_shop": "Retour à la boutique"
+  },
+  "shop": {
+    "rooms": {
+      "living_room": "Salon",
+      "bedroom": "Chambre",
+      "dining": "Salle à manger",
+      "office": "Bureau"
+    },
+    "price": {
+      "under": "Moins de {{amount}}",
+      "between": "{{min}} à {{max}}",
+      "over": "Plus de {{amount}}"
+    },
+    "sort": {
+      "featured": "À la une",
+      "newest": "Plus récents d'abord",
+      "price_asc": "Prix : croissant",
+      "price_desc": "Prix : décroissant",
+      "rating": "Les mieux notés"
+    },
+    "wishlist_add": "Ajouter {{name}} à la liste d'envies",
+    "wishlist_remove": "Retirer {{name}} de la liste d'envies",
+    "filter_room": "Pièce",
+    "all_rooms": "Toutes les pièces",
+    "filter_category": "Catégorie",
+    "all_categories": "Toutes les catégories",
+    "filter_price": "Prix",
+    "any_price": "Tous les prix",
+    "new_only": "Nouveautés uniquement",
+    "pages_nav": "Pages de produits",
+    "page_n": "Page {{n}}",
+    "new_arrivals": "Nouveautés",
+    "all_furniture": "Tous les meubles",
+    "product_single": "{{total}} produit",
+    "product_plural": "{{total}} produits",
+    "search_label": "Rechercher des produits",
+    "search_placeholder": "Rechercher des meubles",
+    "filters": "Filtres",
+    "sort_label": "Trier les produits",
+    "remove_filter": "Retirer le filtre {{label}}",
+    "clear_all": "Tout effacer",
+    "no_results_title": "Aucun produit trouvé",
+    "no_results_text": "Essayez de retirer un filtre ou de chercher un autre mot.",
+    "clear_all_filters": "Effacer tous les filtres",
+    "close_filters": "Fermer les filtres",
+    "show_results": "Afficher {{total}}"
+  },
+  "wishlist": {
+    "title": "Votre liste d'envies",
+    "saved_single": "{{total}} pièce enregistrée",
+    "saved_plural": "{{total}} pièces enregistrées",
+    "empty_text": "Appuyez sur le cœur d'un produit pour l'enregistrer ici et le retrouver plus tard."
+  },
+  "success": {
+    "none_title": "Aucune commande récente trouvée",
+    "none_text": "Les détails de votre commande s'affichent ici juste après le paiement. Vous pouvez aussi suivre une commande existante avec son numéro.",
+    "track_an_order": "Suivre une commande",
+    "title": "Merci pour votre commande",
+    "text": "Votre commande <id>{{id}}</id> est confirmée. Nous avons envoyé les détails à <email>{{email}}</email>.",
+    "estimated_delivery": "Livraison estimée",
+    "payment": "Paiement",
+    "deliver_to": "Livré à",
+    "shipping": "Livraison"
+  },
+  "tracking": {
+    "breadcrumb": "Suivi de commande",
+    "title": "Suivre votre commande",
+    "intro": "Saisissez votre numéro de commande et l'adresse e-mail utilisée lors du paiement.",
+    "order_number": "Numéro de commande",
+    "order_placeholder": "ex. LUM-20481",
+    "checking": "Vérification...",
+    "submit": "Suivre la commande",
+    "not_found": "Nous n'avons trouvé aucune commande correspondant à ces informations. Vérifiez le numéro de commande et l'adresse e-mail, puis réessayez.",
+    "estimated": "Livraison estimée : {{time}}",
+    "current": "En cours",
+    "demo_delivery": "3 à 5 jours ouvrés",
+    "errors": { "order_required": "Le numéro de commande est obligatoire." },
+    "steps": {
+      "placed": { "label": "Commande passée", "text": "Nous avons reçu votre commande." },
+      "confirmed": { "label": "Confirmée", "text": "Votre commande est confirmée et en cours de préparation." },
+      "dispatched": { "label": "Expédiée", "text": "Vos meubles ont quitté notre entrepôt." },
+      "out": { "label": "En cours de livraison", "text": "Notre équipe est en route vers chez vous." },
+      "delivered": { "label": "Livrée", "text": "Vos meubles ont été livrés et installés." }
+    }
+  },
+  "notfound": {
+    "title": "Cette page est introuvable",
+    "text": "Le lien est peut-être rompu ou la page a peut-être été déplacée. Essayez l'un des liens ci-dessous.",
+    "home": "Retour à l'accueil",
+    "back": "Retour",
+    "links": {
+      "shop": "Voir tous les meubles",
+      "blog": "Lire notre blog",
+      "contact": "Nous contacter"
+    }
+  },
+  "blog": {
+    "not_found_title": "Article introuvable",
+    "not_found_text": "Cet article a peut-être été déplacé ou le lien est incorrect.",
+    "back_to_all": "Retour à tous les articles",
+    "meta": "Par {{author}} · {{date}} · {{minutes}} min de lecture",
+    "share": "Partager cet article",
+    "link_copied": "Lien copié",
+    "copy_link": "Copier le lien",
+    "related_title": "Pièces mentionnées dans cet article",
+    "more_articles": "Plus d'articles",
+    "previous_article": "Article précédent",
+    "next_article": "Article suivant",
+    "list_title": "Notre journal",
+    "list_subtitle": "Guides d'achat, idées déco et conseils d'entretien de l'équipe Lumina Home.",
+    "filter_by_category": "Filtrer par catégorie",
+    "all": "Tous",
+    "search": "Rechercher des articles",
+    "latest": "À la une",
+    "read_article": "Lire l'article",
+    "no_results_title": "Aucun article trouvé",
+    "no_results_text": "Essayez un autre mot ou choisissez une autre catégorie.",
+    "clear_filters": "Effacer les filtres",
+    "pages_nav": "Pages du blog",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "page_of": "Page {{current}} sur {{total}}"
+  },
+  "dashboard": {
+    "my_account": "Mon compte",
+    "hello": "Bonjour, {{name}}",
+    "subtitle": "Suivez vos commandes et gérez vos informations.",
+    "sections": "Sections du compte",
+    "sign_out": "Se déconnecter",
+    "status": {
+      "placed": "Commande passée",
+      "dispatched": "Expédiée",
+      "delivered": "Livrée"
+    },
+    "tabs": {
+      "overview": "Aperçu",
+      "orders": "Commandes",
+      "wishlist": "Liste d'envies",
+      "profile": "Profil"
+    },
+    "orders": {
+      "empty_title": "Aucune commande pour le moment",
+      "empty_text": "Lorsque vous passerez une commande, elle apparaîtra ici.",
+      "start_shopping": "Commencer mes achats",
+      "order_id": "Commande {{id}}",
+      "qty": "Qté {{quantity}}",
+      "track": "Suivre cette commande"
+    },
+    "wishlist": {
+      "empty_title": "Votre liste d'envies est vide",
+      "empty_text": "Enregistrez les pièces qui vous plaisent et retrouvez-les ici plus tard.",
+      "browse_shop": "Parcourir la boutique"
+    },
+    "profile": {
+      "phone": "Téléphone",
+      "address": "Adresse de livraison",
+      "city": "Ville",
+      "save": "Enregistrer les modifications",
+      "saved": "Vos informations ont été enregistrées.",
+      "errors": {
+        "phone_required": "Le numéro de téléphone est obligatoire.",
+        "address_required": "L'adresse est obligatoire.",
+        "city_required": "La ville est obligatoire."
+      }
+    },
+    "overview": {
+      "total_orders": "Total des commandes",
+      "in_progress": "En cours",
+      "delivered": "Livrées",
+      "recent_orders": "Commandes récentes",
+      "view_all": "Tout voir"
+    }
+  }
+}

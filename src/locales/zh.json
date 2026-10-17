@@ -1,0 +1,977 @@
+{
+  "announcement": {
+    "free_shipping": "订单满 {{amount}} 即享免费配送和安装！",
+    "sale": "冬季清仓特卖！高端奢华扶手椅最高立减 30%。"
+  },
+  "header": {
+    "categories": "分类",
+    "browse_categories": "浏览分类",
+    "wishlist": "心愿单",
+    "cart": "购物车",
+    "login": "登录",
+    "signup": "注册",
+    "language": "语言",
+    "currency": "货币",
+    "nav": {
+      "home": "首页",
+      "shop": "商店",
+      "blog": "博客",
+      "about": "关于我们",
+      "contact": "联系我们",
+      "book_a_team": "预约团队"
+    },
+    "aria": {
+      "open_menu": "打开菜单",
+      "close_menu": "关闭菜单",
+      "go_home": "Lumina Home，返回首页",
+      "main_nav": "主导航",
+      "mobile_nav": "移动端导航",
+      "primary_nav": "主导航",
+      "icon_with_count": "{{label}}，{{total}} 件商品"
+    }
+  },
+  "common": {
+    "last_updated": "最后更新：{{date}}",
+    "go_back": "返回",
+    "back_to_home": "返回首页",
+    "back": "返回",
+    "home": "首页",
+    "breadcrumb": "面包屑导航",
+    "color": "颜色",
+    "close": "关闭",
+    "pagination": "分页",
+    "previous_page": "上一页",
+    "next_page": "下一页",
+    "loading_product": "正在加载商品",
+    "decrease_quantity": "减少数量",
+    "increase_quantity": "增加数量",
+    "rated": "评分 {{rating}}（满分 {{max}}）",
+    "loading": "加载中",
+    "add_to_wishlist": "加入心愿单",
+    "remove_from_wishlist": "从心愿单移除"
+  },
+  "badge": {
+    "new": "新品",
+    "sale": "特价",
+    "bestseller": "热销",
+    "limited": "限量版",
+    "soldout": "已售罄"
+  },
+  "categories": {
+    "bedroom": "奢华卧室",
+    "decor": "高端装饰与点缀",
+    "dining": "现代餐厅",
+    "kids": "人体工学儿童空间",
+    "kitchen": "极简厨房配件"
+  },
+  "services": {
+    "service_1": { "name": "专业木工安装" },
+    "service_2": { "name": "高端配送团队" }
+  },
+  "team": {
+    "team_1": { "role": "首席设计师" },
+    "team_2": { "role": "室内建筑师" },
+    "team_3": { "role": "工艺大师" },
+    "team_4": { "role": "造型总监" }
+  },
+  "testimonials": {
+    "test_1": { "role": "房主", "review": "极简的设计彻底改变了我的居住空间。" },
+    "test_2": { "role": "建筑师", "review": "一流的工艺。榫卯结构的做工水准顶尖。" },
+    "test_3": { "role": "工作室总监", "review": "服务无可挑剔，配送迅速，包装完美无瑕。" },
+    "test_4": { "role": "室内设计师", "review": "强烈推荐用于现代商业建筑项目。" }
+  },
+  "blog_categories": {
+    "decor_ideas": "装饰灵感",
+    "buying_guides": "选购指南",
+    "small_spaces": "小户型空间",
+    "care_and_materials": "保养与材质"
+  },
+  "blogs": {
+    "blog_1": {
+      "title": "斯堪的纳维亚极简布局的艺术",
+      "date": "2026年1月12日",
+      "excerpt": "浅色调、真实的材质、更少的物件。教你把北欧风格带进自己的房间。",
+      "p1": "北欧设计的核心是宁静。浅色的墙面、天然的木材、柔软的织物，只保留你真正会用到的家具。它既适合宽敞的客厅，也适合小小的卧室。",
+      "h1": "从宁静的基调开始",
+      "p2": "挑选两三种柔和的颜色，比如白色、暖灰色和沙色。沙发、地毯等大件家具尽量保持这些色调。然后再加入一两种天然材质，例如橡木或胡桃木。",
+      "h2": "留出空白",
+      "p3": "极简不等于空无一物，而是要留出呼吸的空间。让部分墙面和地面保持空旷，每个角落选一件有分量的家具，而不是堆放许多小件。",
+      "h3": "简单易行的原则",
+      "ul1": [
+        "选择线条简洁、腿部纤细的家具。",
+        "用质感（布克莱呢、羊毛、亚麻）代替图案。",
+        "保持台面整洁，把小物件收起来。",
+        "在每个座位区放一盏暖光灯。"
+      ]
+    },
+    "blog_2": {
+      "title": "如何选择木材：胡桃木还是橡木",
+      "date": "2026年1月28日",
+      "excerpt": "两者都美观耐用。下面看看它们在颜色、硬度和保养上有何不同。",
+      "p1": "胡桃木和橡木是最受欢迎的两种家具用材。两者都能使用多年，但外观和手感不同，所以该怎么选，取决于你的房间和个人喜好。",
+      "h1": "颜色与纹理",
+      "p2": "胡桃木色泽深沉浓郁，从巧克力棕到深紫棕不等，会让床或桌子显得温暖而庄重。橡木颜色较浅，纹理清晰可见，适合明亮通透的房间。",
+      "h2": "硬度",
+      "p3": "橡木稍硬一些，耐磕碰，日常使用表现很好。胡桃木稍软但依然结实，而且易于加工，因此常用于精细的榫卯结构。",
+      "h3": "该选哪一种？",
+      "ul1": [
+        "小房间或光线较暗的房间：选橡木，它能反射更多光线。",
+        "大卧室或书房：选胡桃木，营造沉静而厚重的氛围。",
+        "使用频繁的家庭餐桌：选橡木，更耐磨损。",
+        "两种木材搭配也可以。以一种为主，另一种作点缀。"
+      ]
+    },
+    "blog_3": {
+      "title": "现代开放空间的照明原则",
+      "date": "2026年2月5日",
+      "excerpt": "只有一盏顶灯永远不够。分层布置灯光，让开放空间更温暖。",
+      "p1": "在开放式空间里，只用一盏明亮的顶灯会让一切显得平淡。好的空间会在不同高度使用多个光源。",
+      "h1": "使用三层灯光",
+      "ul1": [
+        "基础照明：照亮整个房间的主灯。",
+        "任务照明：需要看清东西的地方，用阅读灯或台灯。",
+        "重点照明：用柔和的灯光突出角落、架子或艺术品。"
+      ],
+      "h2": "选择暖光灯泡",
+      "p2": "暖白光的灯泡会让木材和织物看起来更柔和。冷白光更适合厨房和工作区域。",
+      "h3": "让镜子帮忙",
+      "p3": "把大镜子放在窗户对面，可以把日光引入房间更深处。"
+    },
+    "blog_4": {
+      "title": "让小户型的空间发挥最大价值",
+      "date": "2026年2月20日",
+      "excerpt": "聪明的家具选择，让你在小公寓里拥有更多生活空间。",
+      "p1": "只要每件家具都有用处，小公寓也可以显得开阔而舒适。关键是善用墙面和角落，尽量让地面保持空旷。",
+      "h1": "向上发展，而不是向外扩张",
+      "p2": "墙面搁架和悬浮式家具能腾出地面，让房间看起来更大。墙面较低的部分留给日常要用的物品。",
+      "h2": "选择一物多用的家具",
+      "ul1": [
+        "既能放台灯又能放书的边桌。",
+        "可升高站立办公、降低坐着使用的书桌。",
+        "带封闭式收纳、可放线缆和游戏设备的电视柜。"
+      ],
+      "h3": "先测量",
+      "p3": "下单前，先测量房间、门和楼梯。房间主要通道至少留出 80 厘米的行走空间。"
+    },
+    "blog_5": {
+      "title": "高端家居装饰中的可持续材料",
+      "date": "2026年3月2日",
+      "excerpt": "想要更环保、更耐用的家具，该留意哪些方面。",
+      "p1": "最可持续的家具，就是你能用上二十年的那一件。优质的材料和扎实的工艺，比任何认证标签都更重要。",
+      "h1": "该留意什么",
+      "ul1": [
+        "来自负责任管理林地的实木。",
+        "羊毛、亚麻和棉等天然纤维。",
+        "水性、对儿童安全的涂层。",
+        "可以修复的结构，而不是胶粘一次就扔掉。"
+      ],
+      "h2": "好好保养",
+      "p2": "用柔软的干布擦拭木材灰尘，有液体洒出要立刻擦干，并让木材和皮革远离阳光直射和暖气。小小的习惯，能让家具多年依然美观。"
+    }
+  },
+  "products": {
+    "lum_001": { "name": "艾薇琳布克莱扶手椅", "description": "线条具有建筑感的框架，包裹着奢华、触感丰富的布克莱面料。" },
+    "lum_002": { "name": "索伦北欧风吧凳", "description": "实橡木框架，搭配柔和弧形的人体工学座面，坐感舒适。" },
+    "lum_003": { "name": "北欧胡桃木床架", "description": "优质黑胡桃木，纹理鲜明，搭配定制的榫卯结构。" },
+    "lum_004": { "name": "伊利西安丝绒休闲椅", "description": "靠背高而弧线柔和的框架，填充高回弹高密度海绵。" },
+    "lum_005": { "name": "特塞拉玻璃茶几", "description": "几何造型的厚钢化玻璃台面，下方是造型自然的实心底座。" },
+    "lum_006": { "name": "先锋行政书桌", "description": "简洁的工业风书桌，配有隐藏式理线板。" },
+    "lum_007": { "name": "中世纪现代风餐椅", "description": "纤细锥形的实硬木椅腿，托起耐用的高档织物座面。" },
+    "lum_008": { "name": "巨石圆形餐桌", "description": "拉丝微水泥质感的桌座，托起边缘倒角的桌面。" },
+    "lum_009": { "name": "阿尔塔斯六抽斗柜", "description": "无拉手按压式开启抽屉，配有顺滑静音的高端滑轨。" },
+    "lum_010": { "name": "少年有机木游戏桌套装", "description": "环保、对儿童安全且无毒，木质边缘圆润，适合活泼玩耍。" },
+    "lum_011": { "name": "摩德纳模块化厨房置物架", "description": "粉末涂层防水钢架，搭配定制橡木板条。" },
+    "lum_012": { "name": "奥拉褶皱洞石台灯", "description": "打磨过的奶油色整块洞石灯座，搭配光线温暖柔和的亚麻灯罩。" },
+    "lum_013": { "name": "利内亚建筑感模块沙发", "description": "超深座面、低矮造型的组合沙发，包覆精致的中性色织物。" },
+    "lum_014": { "name": "拱形极简落地镜", "description": "全身超清高清玻璃，镶嵌在纤细的阳极氧化黑色合金边框中。" },
+    "lum_015": { "name": "索利斯悬浮胡桃木床头柜", "description": "壁挂式节省空间的床头收纳柜，配有一个缓冲抽屉。" },
+    "lum_016": { "name": "肯德尔人体工学办公椅", "description": "透气网面靠背，可调节腰部支撑，底座滑动顺畅，适合长时间办公。" },
+    "lum_017": { "name": "阿尔图拉升降书桌", "description": "电动升降坐站两用书桌，实橡木桌面，带记忆高度和整洁的理线设计。" },
+    "lum_018": { "name": "特拉柚木户外休闲套装", "description": "耐候实柚木框架，配速干坐垫，适用于阳台和花园。" },
+    "lum_019": { "name": "帕尔马编织户外椅", "description": "轻质铝框外包全天候编织绳，舒适且可叠放。" },
+    "lum_020": { "name": "沙丘手工编织羊毛地毯", "description": "柔软的手工编织羊毛，色调温暖中性，为脚下增添质感与舒适。" },
+    "lum_021": { "name": "维拉悬浮墙面搁架", "description": "纤薄的壁挂橡木搁架，腾出地面空间，用来摆放书籍和装饰品。" },
+    "lum_022": { "name": "诺瓦圆形边桌", "description": "小巧的圆桌，金属底座结实，带有放书和台灯的隐藏层板。" },
+    "lum_023": { "name": "哈特利胡桃木餐边柜", "description": "胡桃木餐边柜，柜门缓冲关闭，收纳空间充足，适合餐厅和客厅。" },
+    "lum_024": { "name": "峡湾实橡木桌", "description": "实橡木桌，天然纹理清晰，边缘圆润，专为日常家庭使用而设计。" },
+    "lum_025": { "name": "马洛收纳箱", "description": "手工打磨的实木收纳箱，配黄铜护角，放在床尾十分合适。" },
+    "lum_026": { "name": "隆德电视柜", "description": "低矮电视柜，带封闭式收纳，可放线缆和游戏设备，天然橡木饰面。" },
+    "lum_027": { "name": "卡罗三门衣柜", "description": "宽敞的衣柜，柜门缓冲关闭，配挂衣杆和可调节层板，哑光饰面沉静雅致。" }
+  },
+  "product_categories": {
+    "armchair": "扶手椅",
+    "bar_stool": "吧凳",
+    "bed": "床",
+    "chair": "椅子",
+    "coffee_table": "茶几",
+    "desk": "书桌",
+    "dining_chair": "餐椅",
+    "dining_table": "餐桌",
+    "dresser": "斗柜",
+    "kids": "儿童家具",
+    "kitchen": "厨房",
+    "lamp": "灯具",
+    "living_room": "客厅",
+    "mirror": "镜子",
+    "nightstand": "床头柜",
+    "office_chair": "办公椅",
+    "office_desk": "办公桌",
+    "outdoor": "户外",
+    "outdoor_chair": "户外椅",
+    "rug": "地毯",
+    "shelves": "搁架",
+    "side_table": "边桌",
+    "sideboard": "餐边柜",
+    "table": "桌子",
+    "trunk": "收纳箱",
+    "tv_unit": "电视柜",
+    "wardrobe": "衣柜"
+  },
+  "footer": {
+    "tagline": "宁静、精工细作的家具，由我们自己的团队配送并安装。",
+    "trust": {
+      "delivery": "由我们自己的团队配送与安装",
+      "returns": "7 天轻松退货",
+      "warranty": "1 年质保",
+      "cod": "支持货到付款"
+    },
+    "socials": { "facebook": "Facebook", "instagram": "Instagram", "youtube": "YouTube" },
+    "aria": { "footer_nav": "页脚导航" },
+    "columns": {
+      "shop": {
+        "title": "商店",
+        "links": {
+          "all_furniture": "全部家具",
+          "living_room": "客厅",
+          "bedroom": "卧室",
+          "dining": "餐厅",
+          "office": "办公室",
+          "new_arrivals": "新品上架"
+        }
+      },
+      "company": {
+        "title": "公司",
+        "links": {
+          "about_us": "关于我们",
+          "blog": "博客",
+          "book_a_team": "预约团队",
+          "contact": "联系我们"
+        }
+      },
+      "help": {
+        "title": "帮助",
+        "links": {
+          "faq": "常见问题",
+          "shipping_and_returns": "配送与退货",
+          "track_your_order": "查询订单",
+          "my_account": "我的账户",
+          "wishlist": "心愿单"
+        }
+      }
+    },
+    "legal": { "privacy": "隐私", "terms": "条款" },
+    "copyright": "© {{year}} {{name}}。保留所有权利。",
+    "back_to_top": "回到顶部"
+  },
+  "sidebar": {
+    "title": "按分类选购",
+    "categories_count": "共 {{total}} 个分类",
+    "close": "关闭分类",
+    "search": "搜索分类",
+    "all_furniture": "全部家具",
+    "no_category": "没有找到与“{{query}}”相关的分类。",
+    "all_categories": "全部分类",
+    "piece": "{{total}} 件",
+    "pieces": "{{total}} 件",
+    "shop_all": "查看全部",
+    "photo_alt": "{{name}}，图片 {{n}}",
+    "help_title": "需要安装帮助吗？",
+    "help_subtitle": "按小时预约安装团队"
+  },
+  "home": {
+    "hero": {
+      "image_alt": "摆放 Lumina Home 家具的现代客厅",
+      "title": "让房子变成家的家具",
+      "subtitle": "实木、柔软的织物和宁静的设计，由我们自己的团队配送并安装。",
+      "shop_now": "立即选购",
+      "see_new_arrivals": "查看新品"
+    },
+    "categories": {
+      "text": "按房间逐一挑选你需要的家具。",
+      "view_all": "查看全部分类"
+    },
+    "products": {
+      "title": "为你精选",
+      "view_all": "查看全部商品",
+      "groups_aria": "商品分组",
+      "tab_new": "新品上架",
+      "tab_top": "高分好评"
+    },
+    "promo": {
+      "living_title": "客厅特卖",
+      "living_text": "为你最常使用的房间准备的沙发、扶手椅和桌子。",
+      "bedroom_title": "卧室必备",
+      "bedroom_text": "床、床头柜和衣柜，让你睡得更好。",
+      "shop_now": "立即选购"
+    },
+    "trust": {
+      "delivery": { "title": "配送与安装", "text": "由我们的团队送货上门并安装。" },
+      "returns": { "title": "轻松退货", "text": "未使用的商品可在 {{days}} 天内退货。" },
+      "warranty": { "title": "1 年质保", "text": "涵盖制造缺陷。" },
+      "cod": { "title": "货到付款", "text": "家具送达后再付款。" }
+    },
+    "blog": {
+      "title": "来自我们的日志",
+      "text": "打造更美好家居的灵感与指南。",
+      "read_all": "阅读全部文章"
+    },
+    "newsletter": {
+      "title": "第一时间获取新设计与优惠",
+      "text": "每月一封邮件，可随时退订。",
+      "thanks": "谢谢，您已加入订阅名单。"
+    }
+  },
+  "newsletter": {
+    "eyebrow": "订阅通讯",
+    "title": "加入我们的社区",
+    "subtitle": "抢先了解新系列，并享受首单九折优惠。",
+    "thank_you": "感谢您的订阅！",
+    "email_label": "电子邮箱",
+    "email_placeholder": "您的电子邮箱",
+    "subscribe": "订阅"
+  },
+  "auth": {
+    "image_alt": "Lumina Home 奢华室内空间",
+    "email_label": "电子邮箱",
+    "email_placeholder": "name@example.com",
+    "password_label": "密码",
+    "back_to_signin": "返回登录",
+    "errors": {
+      "email_required": "请填写电子邮箱。",
+      "email_invalid": "请输入有效的电子邮箱。",
+      "password_required": "请填写密码。",
+      "new_password_required": "请填写新密码。",
+      "name_required": "请填写姓名。",
+      "password_min": "密码至少需要 8 个字符。",
+      "confirm_required": "请确认您的密码。",
+      "passwords_mismatch": "两次输入的密码不一致。",
+      "terms_required": "您需要接受条款才能继续。"
+    },
+    "login": {
+      "title": "欢迎回来",
+      "subtitle": "登录您的账户以继续。",
+      "forgot_password": "忘记密码？",
+      "submit": "登录",
+      "or_continue": "或使用以下方式继续",
+      "new_to": "初次使用 Lumina Home？",
+      "create_account": "创建账户"
+    },
+    "register": {
+      "title": "创建账户",
+      "subtitle": "加入 Lumina Home，收藏心仪商品并跟踪订单。",
+      "full_name": "姓名",
+      "full_name_placeholder": "您的姓名",
+      "password_placeholder": "至少 8 个字符",
+      "confirm_password": "确认密码",
+      "confirm_placeholder": "再次输入密码",
+      "terms_agreement": "我同意<terms>服务条款</terms>和<privacy>隐私政策</privacy>。",
+      "submit": "创建账户",
+      "or_sign_up_with": "或使用以下方式注册",
+      "already_have_account": "已有账户？",
+      "sign_in": "登录"
+    },
+    "forgot": {
+      "title": "忘记密码？",
+      "subtitle": "输入您的电子邮箱，我们会发送重置密码的链接给您。",
+      "submit": "发送重置链接",
+      "remembered": "想起来了？",
+      "sent_title": "请查收邮件",
+      "sent_text": "如果 <email>{{email}}</email> 对应的账户存在，我们已发送重置密码的链接。邮件可能需要几分钟才能送达。",
+      "use_different_email": "使用其他邮箱"
+    },
+    "reset": {
+      "title": "重置密码",
+      "subtitle": "为您的账户设置新密码。",
+      "new_password": "新密码",
+      "confirm_new_password": "确认新密码",
+      "confirm_placeholder": "再次输入新密码",
+      "submit": "更新密码",
+      "done_title": "密码已更新",
+      "done_text": "您的密码已修改，现在可以使用新密码登录。",
+      "go_to_signin": "前往登录"
+    }
+  },
+  "about": {
+    "banner_alt": "Lumina Home 展厅内景",
+    "title": "关于 Lumina Home",
+    "subtitle": "为你的生活方式打造宁静、精工细作的家具。",
+    "story": {
+      "title": "我们的故事",
+      "p1": "Lumina Home 始于一个简单的想法：好的家具应当温暖、经久不衰，并且坦诚地说明它是如何制作的。",
+      "p2": "我们的设计师和工匠在每一件作品上通力合作，从第一张草图到最后的收尾。我们用心挑选材料，并在家具送到你手中之前，测试每一款设计的舒适度和牢固度。",
+      "p3": "我们亲自配送并安装家具，让它以应有的样子来到你的家中。"
+    },
+    "values": {
+      "heading": "我们的理念",
+      "honest": {
+        "title": "真实的材质",
+        "text": "实木、真皮和优质面料。我们会如实告诉你每一件家具所用的材料。"
+      },
+      "durable": {
+        "title": "经久耐用",
+        "text": "扎实的榫卯结构和细致的收尾，让你的家具能用上多年，而不只是一季。"
+      },
+      "care": {
+        "title": "贴心服务",
+        "text": "从第一条消息到家中安装完成，始终有我们团队的真人陪伴你。"
+      }
+    },
+    "services": {
+      "heading": "配送与安装",
+      "text": "我们自己的团队负责配送、组装和摆放家具，您无需操心。"
+    },
+    "team": {
+      "heading": "认识我们的团队",
+      "text": "每一件家具背后的人。"
+    },
+    "testimonials": {
+      "heading": "客户怎么说",
+      "quote": "“{{review}}”"
+    },
+    "cta": {
+      "title": "准备好布置你的家了吗？",
+      "browse": "浏览商店",
+      "talk": "联系我们的团队"
+    }
+  },
+  "contact": {
+    "banner_alt": "Lumina Home 展厅",
+    "title": "联系我们",
+    "subtitle": "对商品或订单有疑问？我们会在一个工作日内回复。",
+    "get_in_touch": "与我们联系",
+    "hours_value": "周一至周六，上午 10:00 至下午 7:00",
+    "details": {
+      "phone": "电话",
+      "email": "邮箱",
+      "showroom": "展厅",
+      "hours": "营业时间"
+    },
+    "errors": {
+      "name_required": "请填写您的姓名。",
+      "message_required": "请填写留言内容。",
+      "message_min": "留言至少需要 10 个字符。"
+    },
+    "sent_title": "留言已发送",
+    "sent_text": "谢谢您，{{name}}。我们会在一个工作日内回复到 {{email}}。",
+    "send_another": "再发一条留言",
+    "form_title": "给我们留言",
+    "phone_optional": "电话（选填）",
+    "message_label": "留言内容",
+    "message_placeholder": "有什么可以帮您？",
+    "send": "发送留言"
+  },
+  "faq": {
+    "title": "常见问题",
+    "intro": "关于订单、配送、退货和保养的快速解答。",
+    "more_title": "没有找到答案？",
+    "more_text": "请查看我们的<shipping>配送与退货</shipping>页面，或<contact>联系我们</contact>。我们会在一个工作日内回复。",
+    "groups": {
+      "orders": {
+        "heading": "订单与付款",
+        "place_order": {
+          "title": "如何下单？",
+          "content": "将喜欢的商品加入购物车，前往结算，填写收货地址并选择付款方式。下单后您会收到一封确认邮件。"
+        },
+        "payment": {
+          "title": "支持哪些付款方式？",
+          "content": "您可以选择货到付款、银行卡支付或银行转账。可用的选项会在结算时显示。"
+        },
+        "change_cancel": {
+          "title": "可以修改或取消订单吗？",
+          "content": "可以，但需在发货之前。请尽快通过邮件或电话联系我们，并提供订单号。定制商品一旦开始生产就无法取消。"
+        }
+      },
+      "delivery": {
+        "heading": "配送与安装",
+        "how_long": {
+          "title": "配送需要多长时间？",
+          "content": "大多数订单会在 3 至 8 个工作日内送达，具体取决于您所在的城市。定制商品需要 2 至 3 周。预计时间会显示在每个商品页面上。"
+        },
+        "assembly": {
+          "title": "你们会帮我组装家具吗？",
+          "content": "会的。我们的配送团队会把家具搬进室内，并按您的要求安装到位，不收取额外费用。"
+        },
+        "tracking": {
+          "title": "如何查询订单进度？",
+          "content": "订单发货后，我们会通过邮件和短信发送物流信息。您也可以致电我们并提供订单号，了解最新状态。"
+        }
+      },
+      "returns": {
+        "heading": "退货与质保",
+        "return_policy": {
+          "title": "退货政策是什么？",
+          "content": "未使用且保持原包装的商品，可在收货后 {{days}} 天内退货。定制商品和最终清仓商品不可退货。"
+        },
+        "damaged": {
+          "title": "家具到货时损坏了怎么办？",
+          "content": "请在收货后 48 小时内联系我们，并提供订单号和照片。我们会为您维修、更换或退款，并承担取件费用。"
+        },
+        "warranty": {
+          "title": "有质保吗？",
+          "content": "我们的家具提供 1 年制造缺陷质保。正常磨损、不当使用以及因潮湿和日晒造成的损坏不在质保范围内。"
+        }
+      },
+      "products": {
+        "heading": "商品与保养",
+        "colour": {
+          "title": "颜色会和图片一致吗？",
+          "content": "我们会尽量准确地呈现颜色，但不同屏幕会有细微差异。如果您想确认，请联系我们，我们会发送更多实物照片。"
+        },
+        "care": {
+          "title": "如何清洁和保养家具？",
+          "content": "用柔软的干布擦拭木材灰尘，有液体洒出要立刻擦干。让木材和皮革远离阳光直射和暖气。布艺家具可每周轻柔吸尘。"
+        }
+      }
+    }
+  },
+  "privacy": {
+    "title": "隐私政策",
+    "intro": "在 <brand>{{name}}</brand>，我们尊重您的隐私，并致力于保护您的个人数据。本隐私政策说明您访问我们的家具商店时，我们如何处理您的个人数据，并告知您享有的隐私权利。",
+    "s1": {
+      "title": "1. 我们收集的信息",
+      "intro": "我们可能会收集、使用、存储和传输有关您的不同类型的个人数据，并将其归类如下：",
+      "identity_label": "身份数据：",
+      "identity_text": "包括名、姓和用户名。",
+      "contact_label": "联系数据：",
+      "contact_text": "包括账单地址、收货地址、电子邮箱和电话号码。",
+      "transaction_label": "交易数据：",
+      "transaction_text": "包括您的付款和收款详情，以及您从我们这里购买的商品的其他信息。"
+    },
+    "s2": {
+      "title": "2. 我们如何使用您的数据",
+      "intro": "我们仅在法律允许的情况下使用您的个人数据。最常见的使用场景如下：",
+      "item1": "将您注册为新客户。",
+      "item2": "处理并配送您的家具订单，包括管理付款、费用和收费。",
+      "item3": "维护我们与您的关系，包括通知您条款或隐私政策的变更。"
+    },
+    "s3": {
+      "title": "3. 数据安全",
+      "text": "我们已采取适当的安全措施，防止您的个人数据被意外丢失、未经授权使用或访问、篡改或披露。此外，我们仅允许确有业务需要的员工、代理、承包商和其他第三方访问您的个人数据。"
+    },
+    "s4": {
+      "title": "4. 联系我们",
+      "text": "如果您对本隐私政策或我们的隐私做法有任何疑问，请联系我们的客服：",
+      "email_label": "邮箱："
+    }
+  },
+  "shipping": {
+    "title": "配送与退货",
+    "intro": "我们如何配送您的家具，以及遇到问题时该怎么办。",
+    "areas": {
+      "major": "主要城市（{{cities}}）",
+      "other": "其他城市和乡镇",
+      "made_to_order": "定制商品"
+    },
+    "times": {
+      "major": "3-5 个工作日",
+      "other": "5-8 个工作日",
+      "made_to_order": "2-3 周"
+    },
+    "delivery": {
+      "title": "配送区域与时间",
+      "text": "我们提供全国配送。配送时间自订单确认后开始计算。",
+      "col_area": "区域",
+      "col_time": "配送时间"
+    },
+    "charges": {
+      "title": "运费",
+      "free": "订单满 {{amount}} 免运费。",
+      "flat": "其他订单收取 {{fee}} 的固定运费。",
+      "shown": "运费会在付款前于结算页显示。"
+    },
+    "setup": {
+      "title": "配送与安装",
+      "p1": "我们的配送团队会把家具搬进您家中，并按您的要求安装到位。请确保有人在场签收订单，并与我们的团队一起验货。",
+      "p2": "在团队离开之前，请检查商品是否有损坏。如有损坏，请立即告知配送团队并拍照留证。"
+    },
+    "payment": {
+      "title": "付款方式",
+      "cod": "货到付款",
+      "online": "银行卡或银行转账在线支付"
+    },
+    "returns": {
+      "title": "{{days}} 天内退货",
+      "text": "商品在收货后 {{days}} 天内，如未使用、保持原包装并与收到时状态一致，可申请退货。",
+      "not_returnable": "以下商品不可退货：",
+      "item1": "定制或个性化家具",
+      "item2": "已使用、安装不当或送达后损坏的商品",
+      "item3": "标注为最终清仓的商品"
+    },
+    "damaged": {
+      "title": "商品损坏或发错",
+      "text": "如果您收到的商品损坏、有缺陷或与订单不符，请在收货后 48 小时内联系我们，并提供订单号和照片。我们会为您维修、更换或退款，并承担取件费用。"
+    },
+    "how_to": {
+      "title": "如何办理退货",
+      "step1": "发送邮件至 {{email}} 或致电 {{phone}}，并提供订单号和退货原因。",
+      "step2": "我们确认您的退货申请，并安排上门取件。",
+      "step3": "我们验货后，退款会在 5-7 个工作日内退回您的原付款方式。"
+    },
+    "question": {
+      "title": "还有疑问吗？",
+      "text": "请查看我们的<faq>常见问题</faq>，或<contact>联系我们</contact>。我们会在一个工作日内回复。"
+    }
+  },
+  "terms": {
+    "title": "服务条款",
+    "intro": "使用 {{store}} 网站或下订单，即表示您同意这些条款。请仔细阅读。",
+    "using": {
+      "title": "使用我们的网站",
+      "text": "您必须年满 18 周岁，或获得父母或监护人的许可，才能下订单。您同意提供准确的信息，并妥善保管账户密码。"
+    },
+    "products": {
+      "title": "商品与价格",
+      "item1": "我们会尽量准确地展示颜色、尺寸和材质，但可能存在细微差异。",
+      "item2": "价格和库存可能不经通知而变动。",
+      "item3": "如果价格或描述有误，我们可能会取消订单并全额退款。"
+    },
+    "orders": {
+      "title": "订单与付款",
+      "text": "我们向您发送确认后，订单即视为接受。如果商品缺货、付款失败或我们怀疑存在欺诈，我们可能拒绝或取消订单。付款须按结算页所示完成。"
+    },
+    "delivery": {
+      "title": "配送、退货与退款",
+      "text": "配送时间、费用、退货和退款的说明见我们的<shipping>配送与退货</shipping>页面，该页面属于本条款的一部分。"
+    },
+    "warranty": {
+      "title": "质保",
+      "text": "我们的家具提供 1 年制造缺陷质保。质保不涵盖正常磨损、意外、不当使用、潮湿损坏，以及送达后对家具所做的改动。"
+    },
+    "ip": {
+      "title": "知识产权",
+      "text": "本网站上的所有照片、文字、标志和设计均属于 {{store}}。未经我们书面许可，您不得复制或使用。"
+    },
+    "liability": {
+      "title": "责任限制",
+      "text": "在法律允许的范围内，{{store}} 对因使用网站或我们的商品而产生的间接损失或损害不承担责任。本条款中的任何内容均不限制您作为消费者享有的法定权利。"
+    },
+    "changes": {
+      "title": "条款的变更",
+      "text": "我们可能会不时更新这些条款。条款变更后继续使用本网站，即表示您接受新条款。"
+    },
+    "law": {
+      "title": "适用法律",
+      "text": "本条款受 {{country}} 法律管辖。"
+    },
+    "contact": {
+      "title": "联系我们",
+      "text": "对这些条款有疑问？请发送邮件至 {{email}}，或访问我们的<contact>联系页面</contact>。"
+    }
+  },
+  "booking": {
+    "title": "预约团队",
+    "intro": "选择您需要的人员和工作小时数。您只需支付团队和时间的费用，并且在预约前就能看到人工费用。",
+    "received_title": "已收到预约",
+    "received_text": "谢谢您，{{name}}。我们会致电 {{phone}}，与您确认在 <date>{{date}}</date>（{{slot}}）上门的团队。",
+    "your_team": "您的团队",
+    "per_hour_each": "每人每小时 {{price}}",
+    "per_hour": "每小时 {{price}}",
+    "team_members": "团队成员",
+    "hours": "小时数",
+    "hours_label": "工作小时数",
+    "hours_option": "{{hours}} 小时",
+    "min_hours": "最少需预约 {{hours}} 小时。",
+    "estimated_cost": "预估人工费用",
+    "estimated_total": "预估总计",
+    "estimate_note": "这只是人工费用的预估。最终费用我们会电话确认。",
+    "another": "再次预约",
+    "continue_shopping": "继续购物",
+    "quick_packages": "快捷套餐",
+    "step1_title": "1. 选择您的团队",
+    "step1_text": "价格按每位成员、每小时计算。",
+    "step2_title": "2. 需要几个小时？",
+    "step3_title": "3. 地点与时间",
+    "count_aria": "数量：{{role}}",
+    "remove_one": "减少一名：{{role}}",
+    "add_one": "增加一名：{{role}}",
+    "address": "地址",
+    "address_placeholder": "门牌号、街道、区域",
+    "date": "期望日期",
+    "start_time": "开始时间",
+    "notes_label": "需要完成哪些工作？（选填）",
+    "notes_placeholder": "例如：组装一张床和一个衣柜，3 楼，有电梯",
+    "labour_cost": "人工费用",
+    "empty_summary": "选择团队成员后，费用会显示在这里。",
+    "rate_times_hours": "{{price}} × {{hours}} 小时",
+    "team_rate": "团队每小时费用",
+    "submit": "预约该团队",
+    "summary_note": "仅含人工费用。家具和配送另行收费。上门前我们会电话确认最终费用。",
+    "errors": {
+      "team": "请至少选择一名团队成员。",
+      "address_required": "请填写地址。",
+      "date_required": "请选择日期。",
+      "date_past": "请选择明天或之后的日期。"
+    },
+    "roles": {
+      "carpenter": { "title": "木工", "text": "组装床、衣柜、桌子等各类家具。" },
+      "helper": { "title": "搬运助手", "text": "搬运、拆包并将家具移动到位。" },
+      "installer": { "title": "安装工", "text": "安装壁挂搁架、镜子、电视柜和灯具。" },
+      "polisher": { "title": "抛光工", "text": "修补划痕，翻新木质家具的表面。" },
+      "designer": { "title": "室内设计师", "text": "现场规划房间布局和搭配。" }
+    },
+    "presets": {
+      "assembly": { "name": "家具组装", "text": "两名木工和一名助手工作 3 小时，适合床和衣柜。" },
+      "wall_fitting": { "name": "墙面安装", "text": "一名安装工和一名助手工作 2 小时，适合搁架、镜子和电视柜。" },
+      "full_setup": { "name": "整间布置", "text": "两名木工、两名助手和一名设计师工作 5 小时。" }
+    },
+    "time_slots": {
+      "morning": "上午",
+      "afternoon": "下午",
+      "evening": "晚上"
+    }
+  },
+  "cart": {
+    "each": "每件 {{price}}",
+    "quantity_of": "{{name}} 的数量",
+    "remove": "移除",
+    "empty_title": "您的购物车是空的",
+    "empty_text": "把喜欢的家具加入购物车，它会在这里等着您。",
+    "browse_shop": "浏览商店",
+    "title_count": "购物车（{{total}}）",
+    "clear": "清空购物车",
+    "summary": "订单摘要",
+    "add_more_free": "再买 {{amount}} 即可免运费。",
+    "free_delivery_unlocked": "您已享受免运费。",
+    "subtotal": "小计",
+    "delivery": "运费",
+    "free": "免费",
+    "total": "合计",
+    "checkout": "去结算"
+  },
+  "checkout": {
+    "title": "结算",
+    "empty_title": "没有可结算的商品",
+    "empty_text": "您的购物车是空的。请先添加商品，再回到这里。",
+    "delivery_details": "配送信息",
+    "delivery_address": "收货地址",
+    "notes_label": "配送备注（选填）",
+    "notes_placeholder": "楼层、地标、方便接听电话的时间",
+    "payment": {
+      "title": "付款",
+      "method": "付款方式",
+      "cod_label": "货到付款",
+      "cod_text": "家具送达时以现金支付。",
+      "bank_label": "银行卡或银行转账",
+      "bank_text": "下单后，我们会将付款详情发送给您。"
+    },
+    "your_order": "您的订单",
+    "place_order": "提交订单",
+    "agreement": "提交订单即表示您同意我们的<terms>条款</terms>和<returns>退货政策</returns>。",
+    "estimated_delivery": "3-8 个工作日",
+    "errors": {
+      "phone_required": "请填写电话号码。",
+      "phone_invalid": "请输入有效的电话号码。",
+      "address_required": "请填写收货地址。",
+      "city_required": "请填写城市。"
+    }
+  },
+  "product": {
+    "add_to_cart": "加入购物车",
+    "photo_alt": "{{name}}，图片 {{n}}",
+    "show_photo": "查看图片 {{n}}",
+    "rating_text": "{{rating}}（{{reviews}} 条评价）",
+    "in_stock": "有货",
+    "out_of_stock": "缺货",
+    "quantity": "数量",
+    "added_to_cart": "已加入购物车",
+    "added": "已添加",
+    "qty_added": "已添加 {{quantity}} 件。",
+    "view_cart": "查看购物车",
+    "trust_delivery": "配送与安装",
+    "trust_returns": "{{days}} 天退货",
+    "trust_warranty": "1 年质保",
+    "sku": "货号：{{sku}}",
+    "related_title": "您可能还喜欢",
+    "details_title": "商品详情",
+    "details_text": "{{description}} 货号：{{sku}}。分类：{{category}}。",
+    "delivery_title": "配送与安装",
+    "delivery_text": "配送需要 3 至 8 个工作日，具体取决于您所在的城市。我们自己的团队会把家具搬进室内并安装到位，不收取额外费用。",
+    "returns_title": "退货与质保",
+    "returns_text": "未使用且保持原包装的商品，可在收货后 {{days}} 天内退货。本商品提供 1 年制造缺陷质保。",
+    "not_found_title": "未找到该商品",
+    "not_found_text": "该商品可能已下架，或链接有误。",
+    "back_to_shop": "返回商店"
+  },
+  "shop": {
+    "rooms": {
+      "living_room": "客厅",
+      "bedroom": "卧室",
+      "dining": "餐厅",
+      "office": "办公室"
+    },
+    "price": {
+      "under": "{{amount}} 以下",
+      "between": "{{min}} 至 {{max}}",
+      "over": "{{amount}} 以上"
+    },
+    "sort": {
+      "featured": "精选",
+      "newest": "最新优先",
+      "price_asc": "价格：从低到高",
+      "price_desc": "价格：从高到低",
+      "rating": "评分最高"
+    },
+    "wishlist_add": "将 {{name}} 加入心愿单",
+    "wishlist_remove": "将 {{name}} 从心愿单移除",
+    "filter_room": "房间",
+    "all_rooms": "全部房间",
+    "filter_category": "分类",
+    "all_categories": "全部分类",
+    "filter_price": "价格",
+    "any_price": "不限价格",
+    "new_only": "仅看新品",
+    "pages_nav": "商品分页",
+    "page_n": "第 {{n}} 页",
+    "new_arrivals": "新品上架",
+    "all_furniture": "全部家具",
+    "product_single": "{{total}} 件商品",
+    "product_plural": "{{total}} 件商品",
+    "search_label": "搜索商品",
+    "search_placeholder": "搜索家具",
+    "filters": "筛选",
+    "sort_label": "商品排序",
+    "remove_filter": "移除筛选条件：{{label}}",
+    "clear_all": "全部清除",
+    "no_results_title": "没有找到商品",
+    "no_results_text": "试试移除某个筛选条件，或换个关键词搜索。",
+    "clear_all_filters": "清除全部筛选",
+    "close_filters": "关闭筛选",
+    "show_results": "查看 {{total}} 件"
+  },
+  "wishlist": {
+    "title": "您的心愿单",
+    "saved_single": "已收藏 {{total}} 件",
+    "saved_plural": "已收藏 {{total}} 件",
+    "empty_text": "点击任意商品上的爱心，即可收藏到这里，方便日后查看。"
+  },
+  "success": {
+    "none_title": "没有找到最近的订单",
+    "none_text": "订单详情会在您结算后立即显示在这里。您也可以用订单号查询已有订单。",
+    "track_an_order": "查询订单",
+    "title": "感谢您的订购",
+    "text": "您的订单 <id>{{id}}</id> 已确认。我们已将详情发送至 <email>{{email}}</email>。",
+    "estimated_delivery": "预计送达",
+    "payment": "付款方式",
+    "deliver_to": "收货人",
+    "shipping": "运费"
+  },
+  "tracking": {
+    "breadcrumb": "订单查询",
+    "title": "查询您的订单",
+    "intro": "请输入订单号和结算时使用的电子邮箱。",
+    "order_number": "订单号",
+    "order_placeholder": "例如 LUM-20481",
+    "checking": "查询中...",
+    "submit": "查询订单",
+    "not_found": "未能找到与这些信息匹配的订单。请检查订单号和邮箱后重试。",
+    "estimated": "预计送达：{{time}}",
+    "current": "当前",
+    "demo_delivery": "3-5 个工作日",
+    "errors": { "order_required": "请填写订单号。" },
+    "steps": {
+      "placed": { "label": "已下单", "text": "我们已收到您的订单。" },
+      "confirmed": { "label": "已确认", "text": "您的订单已确认，正在备货。" },
+      "dispatched": { "label": "已发货", "text": "您的家具已从我们的仓库发出。" },
+      "out": { "label": "派送中", "text": "我们的团队正在前往您家的路上。" },
+      "delivered": { "label": "已送达", "text": "您的家具已送达并安装完毕。" }
+    }
+  },
+  "notfound": {
+    "title": "找不到此页面",
+    "text": "链接可能已失效，或页面已被移动。请尝试下面的链接。",
+    "home": "返回首页",
+    "back": "返回上一页",
+    "links": {
+      "shop": "选购全部家具",
+      "blog": "阅读我们的博客",
+      "contact": "联系我们"
+    }
+  },
+  "blog": {
+    "not_found_title": "未找到该文章",
+    "not_found_text": "这篇文章可能已被移动，或链接有误。",
+    "back_to_all": "返回全部文章",
+    "meta": "作者：{{author}} · {{date}} · 阅读约 {{minutes}} 分钟",
+    "share": "分享这篇文章",
+    "link_copied": "链接已复制",
+    "copy_link": "复制链接",
+    "related_title": "文中提到的家具",
+    "more_articles": "更多文章",
+    "previous_article": "上一篇文章",
+    "next_article": "下一篇文章",
+    "list_title": "我们的日志",
+    "list_subtitle": "来自 Lumina Home 团队的选购指南、装饰灵感和保养小贴士。",
+    "filter_by_category": "按分类筛选",
+    "all": "全部",
+    "search": "搜索文章",
+    "latest": "最新",
+    "read_article": "阅读文章",
+    "no_results_title": "没有找到文章",
+    "no_results_text": "试试换个关键词，或选择其他分类。",
+    "clear_filters": "清除筛选",
+    "pages_nav": "博客分页",
+    "previous": "上一页",
+    "next": "下一页",
+    "page_of": "第 {{current}} 页，共 {{total}} 页"
+  },
+  "dashboard": {
+    "my_account": "我的账户",
+    "hello": "您好，{{name}}",
+    "subtitle": "查询订单并管理您的个人信息。",
+    "sections": "账户栏目",
+    "sign_out": "退出登录",
+    "status": {
+      "placed": "已下单",
+      "dispatched": "已发货",
+      "delivered": "已送达"
+    },
+    "tabs": {
+      "overview": "概览",
+      "orders": "订单",
+      "wishlist": "心愿单",
+      "profile": "个人资料"
+    },
+    "orders": {
+      "empty_title": "暂无订单",
+      "empty_text": "您下单后，订单会显示在这里。",
+      "start_shopping": "开始购物",
+      "order_id": "订单 {{id}}",
+      "qty": "数量 {{quantity}}",
+      "track": "查询此订单"
+    },
+    "wishlist": {
+      "empty_title": "您的心愿单是空的",
+      "empty_text": "收藏喜欢的家具，之后可以在这里找到它们。",
+      "browse_shop": "浏览商店"
+    },
+    "profile": {
+      "phone": "电话",
+      "address": "收货地址",
+      "city": "城市",
+      "save": "保存修改",
+      "saved": "您的信息已保存。",
+      "errors": {
+        "phone_required": "请填写电话号码。",
+        "address_required": "请填写地址。",
+        "city_required": "请填写城市。"
+      }
+    },
+    "overview": {
+      "total_orders": "订单总数",
+      "in_progress": "进行中",
+      "delivered": "已送达",
+      "recent_orders": "最近订单",
+      "view_all": "查看全部"
+    }
+  }
+}

@@ -1,0 +1,977 @@
+{
+  "announcement": {
+    "free_shipping": "Free delivery and setup on orders over {{amount}}!",
+    "sale": "Winter clearance sale! Up to 30% off on premium luxury armchairs."
+  },
+  "header": {
+    "categories": "Categories",
+    "browse_categories": "Browse categories",
+    "wishlist": "Wishlist",
+    "cart": "Cart",
+    "login": "Log in",
+    "signup": "Sign up",
+    "language": "Language",
+    "currency": "Currency",
+    "nav": {
+      "home": "Home",
+      "shop": "Shop",
+      "blog": "Blog",
+      "about": "About",
+      "contact": "Contact",
+      "book_a_team": "Book a Team"
+    },
+    "aria": {
+      "open_menu": "Open menu",
+      "close_menu": "Close menu",
+      "go_home": "Lumina Home, go to home page",
+      "main_nav": "Main",
+      "mobile_nav": "Mobile",
+      "primary_nav": "Primary",
+      "icon_with_count": "{{label}}, {{total}} items"
+    }
+  },
+  "common": {
+    "last_updated": "Last updated: {{date}}",
+    "go_back": "Go back",
+    "back_to_home": "Back to home",
+    "back": "Back",
+    "home": "Home",
+    "breadcrumb": "Breadcrumb",
+    "color": "Color",
+    "close": "Close",
+    "pagination": "Pagination",
+    "previous_page": "Previous page",
+    "next_page": "Next page",
+    "loading_product": "Loading product",
+    "decrease_quantity": "Decrease quantity",
+    "increase_quantity": "Increase quantity",
+    "rated": "Rated {{rating}} out of {{max}}",
+    "loading": "Loading",
+    "add_to_wishlist": "Add to wishlist",
+    "remove_from_wishlist": "Remove from wishlist"
+  },
+  "badge": {
+    "new": "New",
+    "sale": "Sale",
+    "bestseller": "Bestseller",
+    "limited": "Limited Edition",
+    "soldout": "Sold Out"
+  },
+  "categories": {
+    "bedroom": "Luxury Bedroom",
+    "decor": "Premium Decor & Accents",
+    "dining": "Contemporary Dining",
+    "kids": "Ergonomic Kids Spaces",
+    "kitchen": "Minimalist Kitchen Fittings"
+  },
+  "services": {
+    "service_1": { "name": "Professional Carpenter Setup" },
+    "service_2": { "name": "Premium Delivery Team" }
+  },
+  "team": {
+    "team_1": { "role": "Principal Designer" },
+    "team_2": { "role": "Interior Architect" },
+    "team_3": { "role": "Master Craftsman" },
+    "team_4": { "role": "Styling Director" }
+  },
+  "testimonials": {
+    "test_1": { "role": "Homeowner", "review": "The minimalist design transformed my living space completely." },
+    "test_2": { "role": "Architect", "review": "Elite craftsmanship. The structural joinery standards are top-tier." },
+    "test_3": { "role": "Studio Director", "review": "Flawless service, prompt delivery, and immaculate packaging." },
+    "test_4": { "role": "Interior Designer", "review": "Highly recommended for contemporary commercial architectural projects." }
+  },
+  "blog_categories": {
+    "decor_ideas": "Decor Ideas",
+    "buying_guides": "Buying Guides",
+    "small_spaces": "Small Spaces",
+    "care_and_materials": "Care and Materials"
+  },
+  "blogs": {
+    "blog_1": {
+      "title": "The Art of Scandinavian Minimalist Layouts",
+      "date": "Jan 12, 2026",
+      "excerpt": "Light colours, honest materials and fewer things. How to bring the Scandinavian look into your room.",
+      "p1": "Scandinavian design is about calm. Light walls, natural wood, soft fabrics and only the furniture you really use. It works in a big living room and in a small bedroom.",
+      "h1": "Start with a quiet base",
+      "p2": "Pick two or three soft colours, such as white, warm grey and sand. Keep the large pieces, like the sofa and rug, in these shades. Then add one or two natural materials, for example oak or walnut.",
+      "h2": "Leave empty space",
+      "p3": "Minimalist does not mean empty, but it does mean room to breathe. Leave some wall and floor free, and choose one strong piece for each corner instead of many small ones.",
+      "h3": "Simple rules to follow",
+      "ul1": [
+        "Choose furniture with clean lines and slim legs.",
+        "Use texture (boucle, wool, linen) instead of pattern.",
+        "Keep surfaces clear. Store small things out of sight.",
+        "Add one lamp with a warm bulb to every seating area."
+      ]
+    },
+    "blog_2": {
+      "title": "Choosing the Right Timber: Walnut vs Oak",
+      "date": "Jan 28, 2026",
+      "excerpt": "Both are beautiful and long lasting. Here is how they differ in colour, strength and care.",
+      "p1": "Walnut and oak are two of the most loved woods for furniture. Both last for many years, but they look and feel different, so the right choice depends on your room and your taste.",
+      "h1": "Colour and grain",
+      "p2": "Walnut is dark and rich, from chocolate brown to deep purple-brown. It makes a bed or a table feel warm and serious. Oak is lighter, with a clear and visible grain, and suits bright, airy rooms.",
+      "h2": "Strength",
+      "p3": "Oak is a little harder, so it handles dents and daily use very well. Walnut is slightly softer but still strong, and it is easy to work, which is why it is often used for detailed joinery.",
+      "h3": "Which should you choose?",
+      "ul1": [
+        "Small or dark room: oak, because it reflects more light.",
+        "Large bedroom or study: walnut, for a calm and rich feeling.",
+        "Busy family dining table: oak, for extra resistance to wear.",
+        "Mixing both is fine. Keep one wood as the main one and use the other as an accent."
+      ]
+    },
+    "blog_3": {
+      "title": "Lighting Principles for Contemporary Open Spaces",
+      "date": "Feb 05, 2026",
+      "excerpt": "One ceiling light is never enough. Layer your lighting to make an open room feel warm.",
+      "p1": "In an open room, one bright ceiling light makes everything look flat. Good rooms use several sources of light at different heights.",
+      "h1": "Use three layers",
+      "ul1": [
+        "General light: the main light that fills the room.",
+        "Task light: a reading lamp or desk lamp where you need to see clearly.",
+        "Accent light: a soft lamp that highlights a corner, shelf or artwork."
+      ],
+      "h2": "Choose warm bulbs",
+      "p2": "Warm white bulbs make wood and fabric look softer. Cool white is better for kitchens and work areas.",
+      "h3": "Let mirrors help",
+      "p3": "A large mirror placed across from a window brings daylight deeper into the room."
+    },
+    "blog_4": {
+      "title": "Maximizing Compact Apartment Floor Plans",
+      "date": "Feb 20, 2026",
+      "excerpt": "Smart furniture choices that give you more room to live in a small apartment.",
+      "p1": "A small apartment can feel open and comfortable if every piece has a job. The goal is to use walls and corners well, and to keep the floor as clear as possible.",
+      "h1": "Go up, not out",
+      "p2": "Wall shelves and floating units free the floor and make the room look larger. Keep the lower part of the wall for things you use every day.",
+      "h2": "Choose pieces that do two things",
+      "ul1": [
+        "A side table that also holds a lamp and your books.",
+        "A desk that can be raised for standing and lowered for sitting.",
+        "A TV unit with closed storage for cables and games."
+      ],
+      "h3": "Measure first",
+      "p3": "Before you order, measure the room, the door and the stairs. Leave at least 80 cm of walking space in the main paths of the room."
+    },
+    "blog_5": {
+      "title": "Sustainable Materials in Luxury Home Decor",
+      "date": "Mar 02, 2026",
+      "excerpt": "What to look for when you want furniture that is kinder to the environment and lasts longer.",
+      "p1": "The most sustainable furniture is the piece you keep for twenty years. Good materials and strong construction matter more than any label.",
+      "h1": "What to look for",
+      "ul1": [
+        "Solid wood from responsibly managed sources.",
+        "Natural fibres such as wool, linen and cotton.",
+        "Water-based, child-safe finishes.",
+        "Joinery that can be repaired, not glued once and thrown away."
+      ],
+      "h2": "Care for it",
+      "p2": "Dust wood with a soft dry cloth, wipe spills at once, and keep wood and leather away from direct sun and heaters. Small habits keep furniture beautiful for years."
+    }
+  },
+  "products": {
+    "lum_001": { "name": "Aveline Bouclé Armchair", "description": "Architectural structural profile wrapped in luxurious tactile texturized bouclé fabrics." },
+    "lum_002": { "name": "Soren Scandinavian Bar Stool", "description": "Solid oak frame featuring soft contoured ergonomic seating comfort handles." },
+    "lum_003": { "name": "Nordic Walnut Timber Bed Frame", "description": "Premium black walnut grain profiles paired with interlocking custom mortise joinery." },
+    "lum_004": { "name": "Elysian Velvet Accent Chair", "description": "Gently curved high-back seating frame padded with high-resiliency dense cushioning." },
+    "lum_005": { "name": "Tessera Glass Coffee Table", "description": "Tempered geometric thick glass slab surface layout overlaying solid organic bases." },
+    "lum_006": { "name": "Vanguard Executive Study Desk", "description": "Clean industrial desk architecture equipped with hidden cable routing panels." },
+    "lum_007": { "name": "Mid-Century Modern Dining Chair", "description": "Tapered sleek solid hardwood legs supporting highly durable premium textile seats." },
+    "lum_008": { "name": "Monolith Circular Dining Table", "description": "Brushed micro-cement structural texture pedestal supporting chamfered profile tops." },
+    "lum_009": { "name": "Altas Six-Drawer Dresser", "description": "Sleek handleless push-to-open smooth silent drawer runner luxury mechanisms." },
+    "lum_010": { "name": "Junior Organic Play Table Set", "description": "Eco-friendly child-safe non-toxic rounded timber edges optimized for active play." },
+    "lum_011": { "name": "Modena Modular Kitchen Shelving", "description": "Powder-coated water-resistant architectural steel frames paired with custom oak slats." },
+    "lum_012": { "name": "Aura Pleated Travertine Lamp", "description": "Honed raw solid cream travertine natural block stone bases matching warm diffused linen." },
+    "lum_013": { "name": "Linea Architectural Modular Sofa", "description": "Ultra-deep lounging low layout sectional wrapped in exquisite texturized neutrals." },
+    "lum_014": { "name": "Arched Minimalist Floor Mirror", "description": "Full-length ultra-clear high-definition glass inside slim anodized black alloy borders." },
+    "lum_015": { "name": "Solis Floating Walnut Nightstand", "description": "Wall-mounted space-saving architectural bedside storage featuring single soft drawers." },
+    "lum_016": { "name": "Kendal Ergonomic Office Chair", "description": "Breathable mesh back with adjustable lumbar support and a smooth-rolling base for long working days." },
+    "lum_017": { "name": "Altura Height-Adjustable Desk", "description": "Electric sit-stand desk with a solid oak top, memory presets and tidy cable management." },
+    "lum_018": { "name": "Terra Teak Outdoor Lounge Set", "description": "Weather-resistant solid teak frames with quick-dry cushions for balconies and gardens." },
+    "lum_019": { "name": "Palma Woven Outdoor Chair", "description": "Lightweight aluminium frame wrapped in all-weather woven rope, comfortable and easy to stack." },
+    "lum_020": { "name": "Dune Handwoven Wool Rug", "description": "Soft handwoven wool in warm neutral tones, adding texture and comfort underfoot." },
+    "lum_021": { "name": "Vela Floating Wall Shelves", "description": "Slim wall-mounted oak shelves that free the floor and display books and decor." },
+    "lum_022": { "name": "Nova Round Side Table", "description": "Compact round table with a sturdy metal base and a hidden shelf for books and lamps." },
+    "lum_023": { "name": "Hartley Walnut Sideboard", "description": "Walnut sideboard with soft-close doors and generous storage for dining and living rooms." },
+    "lum_024": { "name": "Fjord Solid Oak Table", "description": "Solid oak table with a clear natural grain and rounded edges, made for everyday family use." },
+    "lum_025": { "name": "Marlow Storage Trunk", "description": "Hand-finished solid wood storage trunk with brass corners, perfect at the foot of a bed." },
+    "lum_026": { "name": "Lund Media Console", "description": "Low TV unit with closed storage for cables and games, finished in natural oak." },
+    "lum_027": { "name": "Carrow Three-Door Wardrobe", "description": "Spacious wardrobe with soft-close doors, hanging rail and adjustable shelves in a calm matte finish." }
+  },
+  "product_categories": {
+    "armchair": "Armchair",
+    "bar_stool": "Bar Stool",
+    "bed": "Bed",
+    "chair": "Chair",
+    "coffee_table": "Coffee Table",
+    "desk": "Desk",
+    "dining_chair": "Dining Chair",
+    "dining_table": "Dining Table",
+    "dresser": "Dresser",
+    "kids": "Kids",
+    "kitchen": "Kitchen",
+    "lamp": "Lamp",
+    "living_room": "Living Room",
+    "mirror": "Mirror",
+    "nightstand": "Nightstand",
+    "office_chair": "Office Chair",
+    "office_desk": "Office Desk",
+    "outdoor": "Outdoor",
+    "outdoor_chair": "Outdoor Chair",
+    "rug": "Rug",
+    "shelves": "Shelves",
+    "side_table": "Side Table",
+    "sideboard": "Sideboard",
+    "table": "Table",
+    "trunk": "Trunk",
+    "tv_unit": "TV Unit",
+    "wardrobe": "Wardrobe"
+  },
+  "footer": {
+    "tagline": "Calm, well-made furniture, delivered and set up by our own team.",
+    "trust": {
+      "delivery": "Delivery and set-up by our own team",
+      "returns": "7-day easy returns",
+      "warranty": "1-year warranty",
+      "cod": "Cash on delivery available"
+    },
+    "socials": { "facebook": "Facebook", "instagram": "Instagram", "youtube": "YouTube" },
+    "aria": { "footer_nav": "Footer" },
+    "columns": {
+      "shop": {
+        "title": "Shop",
+        "links": {
+          "all_furniture": "All furniture",
+          "living_room": "Living room",
+          "bedroom": "Bedroom",
+          "dining": "Dining",
+          "office": "Office",
+          "new_arrivals": "New arrivals"
+        }
+      },
+      "company": {
+        "title": "Company",
+        "links": {
+          "about_us": "About us",
+          "blog": "Blog",
+          "book_a_team": "Book a team",
+          "contact": "Contact"
+        }
+      },
+      "help": {
+        "title": "Help",
+        "links": {
+          "faq": "FAQ",
+          "shipping_and_returns": "Shipping and returns",
+          "track_your_order": "Track your order",
+          "my_account": "My account",
+          "wishlist": "Wishlist"
+        }
+      }
+    },
+    "legal": { "privacy": "Privacy", "terms": "Terms" },
+    "copyright": "© {{year}} {{name}}. All rights reserved.",
+    "back_to_top": "Back to top"
+  },
+  "sidebar": {
+    "title": "Shop by category",
+    "categories_count": "{{total}} categories",
+    "close": "Close categories",
+    "search": "Search categories",
+    "all_furniture": "All furniture",
+    "no_category": "No category found for “{{query}}”.",
+    "all_categories": "All categories",
+    "piece": "{{total}} piece",
+    "pieces": "{{total}} pieces",
+    "shop_all": "Shop all",
+    "photo_alt": "{{name}}, photo {{n}}",
+    "help_title": "Need help with set-up?",
+    "help_subtitle": "Book a team by the hour"
+  },
+  "home": {
+    "hero": {
+      "image_alt": "Modern living room with Lumina Home furniture",
+      "title": "Furniture that makes a house feel like home",
+      "subtitle": "Solid wood, soft fabrics and quiet design, delivered and set up by our own team.",
+      "shop_now": "Shop Now",
+      "see_new_arrivals": "See new arrivals"
+    },
+    "categories": {
+      "text": "Find the piece you need, room by room.",
+      "view_all": "View all categories"
+    },
+    "products": {
+      "title": "Our picks for you",
+      "view_all": "View all products",
+      "groups_aria": "Product groups",
+      "tab_new": "New arrivals",
+      "tab_top": "Top rated"
+    },
+    "promo": {
+      "living_title": "Living room sale",
+      "living_text": "Sofas, armchairs and tables for the room you use most.",
+      "bedroom_title": "Bedroom essentials",
+      "bedroom_text": "Beds, nightstands and wardrobes for better sleep.",
+      "shop_now": "Shop now"
+    },
+    "trust": {
+      "delivery": { "title": "Delivery and set-up", "text": "Our team brings it in and sets it up." },
+      "returns": { "title": "Easy returns", "text": "Return unused items within {{days}} days." },
+      "warranty": { "title": "1-year warranty", "text": "Cover against manufacturing defects." },
+      "cod": { "title": "Cash on delivery", "text": "Pay when your furniture arrives." }
+    },
+    "blog": {
+      "title": "From our journal",
+      "text": "Ideas and guides for a better home.",
+      "read_all": "Read all posts"
+    },
+    "newsletter": {
+      "title": "Get new designs and offers first",
+      "text": "One email a month. Unsubscribe any time.",
+      "thanks": "Thank you, you are on the list."
+    }
+  },
+  "newsletter": {
+    "eyebrow": "Newsletter",
+    "title": "Join Our Community",
+    "subtitle": "Get early access to new collections and 10% off your first order.",
+    "thank_you": "Thank you for subscribing!",
+    "email_label": "Email address",
+    "email_placeholder": "Your email address",
+    "subscribe": "Subscribe"
+  },
+  "auth": {
+    "image_alt": "Lumina Home Luxury Interior",
+    "email_label": "Email Address",
+    "email_placeholder": "name@example.com",
+    "password_label": "Password",
+    "back_to_signin": "Back to sign in",
+    "errors": {
+      "email_required": "Email address is required.",
+      "email_invalid": "Enter a valid email address.",
+      "password_required": "Password is required.",
+      "new_password_required": "New password is required.",
+      "name_required": "Full name is required.",
+      "password_min": "Password must be at least 8 characters.",
+      "confirm_required": "Please confirm your password.",
+      "passwords_mismatch": "Passwords do not match.",
+      "terms_required": "You must accept the terms to continue."
+    },
+    "login": {
+      "title": "Welcome Back",
+      "subtitle": "Sign in to your account to continue.",
+      "forgot_password": "Forgot Password?",
+      "submit": "Sign In",
+      "or_continue": "Or continue with",
+      "new_to": "New to Lumina Home?",
+      "create_account": "Create an account"
+    },
+    "register": {
+      "title": "Create Account",
+      "subtitle": "Join Lumina Home to save favourites and track orders.",
+      "full_name": "Full Name",
+      "full_name_placeholder": "Your full name",
+      "password_placeholder": "Min. 8 characters",
+      "confirm_password": "Confirm Password",
+      "confirm_placeholder": "Repeat password",
+      "terms_agreement": "I agree to the <terms>Terms of Service</terms> and <privacy>Privacy Policy</privacy>.",
+      "submit": "Create Account",
+      "or_sign_up_with": "Or sign up with",
+      "already_have_account": "Already have an account?",
+      "sign_in": "Sign in"
+    },
+    "forgot": {
+      "title": "Forgot Password?",
+      "subtitle": "Enter your email and we will send you a link to reset your password.",
+      "submit": "Send Reset Link",
+      "remembered": "Remembered it?",
+      "sent_title": "Check your email",
+      "sent_text": "If an account exists for <email>{{email}}</email>, we have sent a link to reset your password. It may take a few minutes to arrive.",
+      "use_different_email": "Use a different email"
+    },
+    "reset": {
+      "title": "Reset Password",
+      "subtitle": "Choose a new password for your account.",
+      "new_password": "New Password",
+      "confirm_new_password": "Confirm New Password",
+      "confirm_placeholder": "Repeat new password",
+      "submit": "Update Password",
+      "done_title": "Password updated",
+      "done_text": "Your password has been changed. You can now sign in with your new password.",
+      "go_to_signin": "Go to Sign In"
+    }
+  },
+  "about": {
+    "banner_alt": "Inside the Lumina Home showroom",
+    "title": "About Lumina Home",
+    "subtitle": "Calm, well-made furniture for the way you live.",
+    "story": {
+      "title": "Our story",
+      "p1": "Lumina Home started with a simple idea: good furniture should feel warm, look timeless and be honest about how it is made.",
+      "p2": "Our designers and craftsmen work together on every piece, from the first sketch to the final finish. We choose materials with care and test each design for comfort and strength before it reaches you.",
+      "p3": "We deliver and set up the furniture ourselves, so it arrives in your home the way it should."
+    },
+    "values": {
+      "heading": "What we stand for",
+      "honest": {
+        "title": "Honest materials",
+        "text": "Solid wood, real leather and quality fabrics. We tell you exactly what each piece is made of."
+      },
+      "durable": {
+        "title": "Built to last",
+        "text": "Strong joinery and careful finishing, so your furniture stays good for years, not seasons."
+      },
+      "care": {
+        "title": "Looked after",
+        "text": "From the first message to set-up in your home, a real person from our team is with you."
+      }
+    },
+    "services": {
+      "heading": "Delivery and set-up",
+      "text": "Our own teams deliver, assemble and place your furniture, so you do not have to."
+    },
+    "team": {
+      "heading": "Meet the team",
+      "text": "The people behind every piece."
+    },
+    "testimonials": {
+      "heading": "What our customers say",
+      "quote": "“{{review}}”"
+    },
+    "cta": {
+      "title": "Ready to furnish your home?",
+      "browse": "Browse the shop",
+      "talk": "Talk to our team"
+    }
+  },
+  "contact": {
+    "banner_alt": "Lumina Home showroom",
+    "title": "Contact us",
+    "subtitle": "Questions about a product or an order? We reply within one working day.",
+    "get_in_touch": "Get in touch",
+    "hours_value": "Mon to Sat, 10:00 am to 7:00 pm",
+    "details": {
+      "phone": "Phone",
+      "email": "Email",
+      "showroom": "Showroom",
+      "hours": "Hours"
+    },
+    "errors": {
+      "name_required": "Your name is required.",
+      "message_required": "Please write a message.",
+      "message_min": "Message must be at least 10 characters."
+    },
+    "sent_title": "Message sent",
+    "sent_text": "Thank you, {{name}}. We will reply to {{email}} within one working day.",
+    "send_another": "Send another message",
+    "form_title": "Send us a message",
+    "phone_optional": "Phone (optional)",
+    "message_label": "Message",
+    "message_placeholder": "How can we help?",
+    "send": "Send Message"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "intro": "Quick answers about orders, delivery, returns and care.",
+    "more_title": "Did not find your answer?",
+    "more_text": "Read our <shipping>Shipping & Returns</shipping> page or <contact>contact us</contact>. We reply within one working day.",
+    "groups": {
+      "orders": {
+        "heading": "Orders and payment",
+        "place_order": {
+          "title": "How do I place an order?",
+          "content": "Add the items you like to your cart, go to checkout, enter your delivery address and choose a payment method. You will get a confirmation email once the order is placed."
+        },
+        "payment": {
+          "title": "Which payment methods do you accept?",
+          "content": "You can pay by cash on delivery, by card or by bank transfer. The available options are shown at checkout."
+        },
+        "change_cancel": {
+          "title": "Can I change or cancel my order?",
+          "content": "Yes, before it is dispatched. Email or call us with your order number as soon as possible. Made-to-order pieces cannot be cancelled once production has started."
+        }
+      },
+      "delivery": {
+        "heading": "Delivery and set-up",
+        "how_long": {
+          "title": "How long does delivery take?",
+          "content": "Most orders arrive in 3 to 8 working days, depending on your city. Made-to-order pieces take 2 to 3 weeks. The estimated time is shown on each product page."
+        },
+        "assembly": {
+          "title": "Do you assemble the furniture for me?",
+          "content": "Yes. Our delivery team brings the furniture inside and sets it up where you want it, at no extra charge."
+        },
+        "tracking": {
+          "title": "How can I track my order?",
+          "content": "We send tracking details by email and SMS once your order is dispatched. You can also call us with your order number for an update."
+        }
+      },
+      "returns": {
+        "heading": "Returns and warranty",
+        "return_policy": {
+          "title": "What is your return policy?",
+          "content": "You can return unused items in their original packaging within {{days}} days of delivery. Made-to-order and final-sale items cannot be returned."
+        },
+        "damaged": {
+          "title": "What if my furniture arrives damaged?",
+          "content": "Contact us within 48 hours of delivery with your order number and photos. We will repair it, replace it or refund you, and we pay for the pickup."
+        },
+        "warranty": {
+          "title": "Is there a warranty?",
+          "content": "Our furniture comes with a 1-year warranty against manufacturing defects. It does not cover normal wear, misuse or damage from moisture and sunlight."
+        }
+      },
+      "products": {
+        "heading": "Products and care",
+        "colour": {
+          "title": "Will the colour match the photos?",
+          "content": "We try to show colours as accurately as possible, but screens differ slightly. If you want to be sure, contact us and we will send extra photos of the piece."
+        },
+        "care": {
+          "title": "How do I clean and care for my furniture?",
+          "content": "Dust wood with a soft dry cloth and wipe spills right away. Keep wood and leather away from direct sunlight and heaters. Fabric pieces can be vacuumed gently every week."
+        }
+      }
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "intro": "At <brand>{{name}}</brand>, we respect your privacy and are committed to protecting your personal data. This privacy policy explains how we look after your personal data when you visit our boutique furniture store and tells you about your privacy rights.",
+    "s1": {
+      "title": "1. Information We Collect",
+      "intro": "We may collect, use, store and transfer different kinds of personal data about you which we have grouped together as follows:",
+      "identity_label": "Identity Data:",
+      "identity_text": "Includes first name, last name, and username.",
+      "contact_label": "Contact Data:",
+      "contact_text": "Includes billing address, delivery address, email address, and telephone numbers.",
+      "transaction_label": "Transaction Data:",
+      "transaction_text": "Includes details about payments to and from you and other details of products you have purchased from us."
+    },
+    "s2": {
+      "title": "2. How We Use Your Data",
+      "intro": "We will only use your personal data when the law allows us to. Most commonly, we will use your personal data in the following circumstances:",
+      "item1": "To register you as a new customer.",
+      "item2": "To process and deliver your furniture orders including managing payments, fees, and charges.",
+      "item3": "To manage our relationship with you which will include notifying you about changes to our terms or privacy policy."
+    },
+    "s3": {
+      "title": "3. Data Security",
+      "text": "We have put in place appropriate security measures to prevent your personal data from being accidentally lost, used or accessed in an unauthorized way, altered or disclosed. In addition, we limit access to your personal data to those employees, agents, contractors and other third parties who have a business need to know."
+    },
+    "s4": {
+      "title": "4. Contact Us",
+      "text": "If you have any questions about this privacy policy or our privacy practices, please contact our support desk:",
+      "email_label": "Email:"
+    }
+  },
+  "shipping": {
+    "title": "Shipping & Returns",
+    "intro": "How we deliver your furniture, and what to do if something is not right.",
+    "areas": {
+      "major": "Major cities ({{cities}})",
+      "other": "Other cities and towns",
+      "made_to_order": "Made-to-order pieces"
+    },
+    "times": {
+      "major": "3-5 working days",
+      "other": "5-8 working days",
+      "made_to_order": "2-3 weeks"
+    },
+    "delivery": {
+      "title": "Delivery areas and times",
+      "text": "We deliver nationwide. Delivery time starts once your order is confirmed.",
+      "col_area": "Area",
+      "col_time": "Delivery time"
+    },
+    "charges": {
+      "title": "Shipping charges",
+      "free": "Free delivery on orders over {{amount}}.",
+      "flat": "A flat fee of {{fee}} applies to all other orders.",
+      "shown": "The delivery fee is shown at checkout before you pay."
+    },
+    "setup": {
+      "title": "Delivery and set-up",
+      "p1": "Our delivery team brings the furniture inside your home and sets it up where you want it. Please make sure someone is available to receive the order and check it with our team.",
+      "p2": "Before they leave, check the items for any damage. If something is damaged, tell the delivery team right away and take a photo."
+    },
+    "payment": {
+      "title": "Payment options",
+      "cod": "Cash on delivery",
+      "online": "Online payment by card or bank transfer"
+    },
+    "returns": {
+      "title": "Returns within {{days}} days",
+      "text": "You can return an item within {{days}} days of delivery if it is unused, in its original packaging and in the same condition you received it.",
+      "not_returnable": "These items cannot be returned:",
+      "item1": "Made-to-order or customised furniture",
+      "item2": "Items that have been used, assembled badly or damaged after delivery",
+      "item3": "Clearance items marked as final sale"
+    },
+    "damaged": {
+      "title": "Damaged or wrong items",
+      "text": "If your item arrives damaged, faulty or is not what you ordered, contact us within 48 hours of delivery with your order number and photos. We will repair it, replace it or refund you, and we cover the pickup cost."
+    },
+    "how_to": {
+      "title": "How to start a return",
+      "step1": "Email {{email}} or call {{phone}} with your order number and the reason.",
+      "step2": "We confirm your return and arrange pickup.",
+      "step3": "After we check the item, your refund is sent to your original payment method within 5-7 working days."
+    },
+    "question": {
+      "title": "Still have a question?",
+      "text": "Check our <faq>FAQ</faq> or <contact>contact us</contact>. We reply within one working day."
+    }
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "intro": "By using the {{store}} website or placing an order, you agree to these terms. Please read them carefully.",
+    "using": {
+      "title": "Using our website",
+      "text": "You must be at least 18 years old, or have a parent or guardian's permission, to place an order. You agree to give correct information and to keep your account password private."
+    },
+    "products": {
+      "title": "Products and prices",
+      "item1": "We try to show colours, sizes and materials accurately, but small differences can happen.",
+      "item2": "Prices and stock can change without notice.",
+      "item3": "If a price or description is wrong, we may cancel the order and refund you in full."
+    },
+    "orders": {
+      "title": "Orders and payment",
+      "text": "An order is accepted once we send you a confirmation. We may decline or cancel an order if an item is out of stock, if payment fails or if we suspect fraud. Payment must be completed as shown at checkout."
+    },
+    "delivery": {
+      "title": "Delivery, returns and refunds",
+      "text": "Delivery times, charges, returns and refunds are explained on our <shipping>Shipping & Returns</shipping> page, which is part of these terms."
+    },
+    "warranty": {
+      "title": "Warranty",
+      "text": "Our furniture has a 1-year warranty against manufacturing defects. The warranty does not cover normal wear, accidents, misuse, moisture damage or changes made to the furniture after delivery."
+    },
+    "ip": {
+      "title": "Intellectual property",
+      "text": "All photos, text, logos and designs on this website belong to {{store}}. You may not copy or use them without our written permission."
+    },
+    "liability": {
+      "title": "Limit of liability",
+      "text": "To the extent allowed by law, {{store}} is not responsible for indirect losses or damages that come from using the website or our products. Nothing in these terms limits your legal rights as a consumer."
+    },
+    "changes": {
+      "title": "Changes to these terms",
+      "text": "We may update these terms from time to time. Continuing to use the website after a change means you accept the new terms."
+    },
+    "law": {
+      "title": "Governing law",
+      "text": "These terms are governed by the laws of {{country}}."
+    },
+    "contact": {
+      "title": "Contact us",
+      "text": "Questions about these terms? Email {{email}} or visit our <contact>contact page</contact>."
+    }
+  },
+  "booking": {
+    "title": "Book a team",
+    "intro": "Choose the people you need and for how many hours. You pay for the team and the time, and you see the labour cost before you book.",
+    "received_title": "Booking received",
+    "received_text": "Thank you, {{name}}. We will call you on {{phone}} to confirm your team on <date>{{date}}</date> ({{slot}}).",
+    "your_team": "Your team",
+    "per_hour_each": "{{price}} per hour each",
+    "per_hour": "{{price}} per hour",
+    "team_members": "Team members",
+    "hours": "Hours",
+    "hours_label": "Hours of work",
+    "hours_option": "{{hours}} hours",
+    "min_hours": "Minimum booking is {{hours}} hours.",
+    "estimated_cost": "Estimated labour cost",
+    "estimated_total": "Estimated total",
+    "estimate_note": "This is an estimate for labour only. We confirm the final cost by phone.",
+    "another": "Make another booking",
+    "continue_shopping": "Continue shopping",
+    "quick_packages": "Quick packages",
+    "step1_title": "1. Choose your team",
+    "step1_text": "Rates are per member, per hour.",
+    "step2_title": "2. How many hours?",
+    "step3_title": "3. Where and when",
+    "count_aria": "Quantity: {{role}}",
+    "remove_one": "Remove one: {{role}}",
+    "add_one": "Add one: {{role}}",
+    "address": "Address",
+    "address_placeholder": "House, street, area",
+    "date": "Preferred date",
+    "start_time": "Start time",
+    "notes_label": "What needs to be done? (optional)",
+    "notes_placeholder": "For example: assemble a bed and a wardrobe, 3rd floor, lift available",
+    "labour_cost": "Labour cost",
+    "empty_summary": "Choose your team members and the cost will appear here.",
+    "rate_times_hours": "{{price}} × {{hours}} hours",
+    "team_rate": "Team rate per hour",
+    "submit": "Book this team",
+    "summary_note": "Labour only. Furniture and delivery are charged separately. We confirm the final cost by phone before the visit.",
+    "errors": {
+      "team": "Choose at least one team member.",
+      "address_required": "Address is required.",
+      "date_required": "Choose a date.",
+      "date_past": "Choose a date from tomorrow onwards."
+    },
+    "roles": {
+      "carpenter": { "title": "Carpenter", "text": "Assembles beds, wardrobes, tables and other furniture." },
+      "helper": { "title": "Helper", "text": "Carries, unpacks and moves furniture into place." },
+      "installer": { "title": "Installer", "text": "Fits wall-mounted shelves, mirrors, TV units and lights." },
+      "polisher": { "title": "Polisher", "text": "Touches up scratches and restores the finish on wooden pieces." },
+      "designer": { "title": "Interior designer", "text": "Plans the layout and styling of your room on site." }
+    },
+    "presets": {
+      "assembly": { "name": "Furniture assembly", "text": "Two carpenters and a helper for 3 hours, ideal for beds and wardrobes." },
+      "wall_fitting": { "name": "Wall fitting", "text": "An installer and a helper for 2 hours, for shelves, mirrors and TV units." },
+      "full_setup": { "name": "Full room set-up", "text": "Two carpenters, two helpers and a designer for 5 hours." }
+    },
+    "time_slots": {
+      "morning": "Morning",
+      "afternoon": "Afternoon",
+      "evening": "Evening"
+    }
+  },
+  "cart": {
+    "each": "{{price}} each",
+    "quantity_of": "Quantity of {{name}}",
+    "remove": "Remove",
+    "empty_title": "Your cart is empty",
+    "empty_text": "Add a piece you like and it will wait for you here.",
+    "browse_shop": "Browse the shop",
+    "title_count": "Cart ({{total}})",
+    "clear": "Clear cart",
+    "summary": "Order summary",
+    "add_more_free": "Add {{amount}} more for free delivery.",
+    "free_delivery_unlocked": "You get free delivery.",
+    "subtotal": "Subtotal",
+    "delivery": "Delivery",
+    "free": "Free",
+    "total": "Total",
+    "checkout": "Go to checkout"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "empty_title": "Nothing to check out",
+    "empty_text": "Your cart is empty. Add a piece first, then come back here.",
+    "delivery_details": "Delivery details",
+    "delivery_address": "Delivery Address",
+    "notes_label": "Notes for delivery (optional)",
+    "notes_placeholder": "Floor, landmark, best time to call",
+    "payment": {
+      "title": "Payment",
+      "method": "Payment method",
+      "cod_label": "Cash on delivery",
+      "cod_text": "Pay in cash when your furniture arrives.",
+      "bank_label": "Card or bank transfer",
+      "bank_text": "We send you the payment details after you order."
+    },
+    "your_order": "Your order",
+    "place_order": "Place order",
+    "agreement": "By placing your order you agree to our <terms>Terms</terms> and <returns>Return policy</returns>.",
+    "estimated_delivery": "3-8 working days",
+    "errors": {
+      "phone_required": "Phone number is required.",
+      "phone_invalid": "Enter a valid phone number.",
+      "address_required": "Delivery address is required.",
+      "city_required": "City is required."
+    }
+  },
+  "product": {
+    "add_to_cart": "Add to Cart",
+    "photo_alt": "{{name}}, photo {{n}}",
+    "show_photo": "Show photo {{n}}",
+    "rating_text": "{{rating}} ({{reviews}} reviews)",
+    "in_stock": "In stock",
+    "out_of_stock": "Out of stock",
+    "quantity": "Quantity",
+    "added_to_cart": "Added to cart",
+    "added": "Added",
+    "qty_added": "{{quantity}} added.",
+    "view_cart": "View cart",
+    "trust_delivery": "Delivery and set-up",
+    "trust_returns": "{{days}}-day returns",
+    "trust_warranty": "1-year warranty",
+    "sku": "SKU: {{sku}}",
+    "related_title": "You may also like",
+    "details_title": "Product details",
+    "details_text": "{{description}} SKU: {{sku}}. Category: {{category}}.",
+    "delivery_title": "Delivery and set-up",
+    "delivery_text": "Delivery takes 3 to 8 working days depending on your city. Our own team brings the furniture inside and sets it up where you want it, at no extra charge.",
+    "returns_title": "Returns and warranty",
+    "returns_text": "Return unused items in their original packaging within {{days}} days of delivery. This piece comes with a 1-year warranty against manufacturing defects.",
+    "not_found_title": "Product not found",
+    "not_found_text": "This product may have been removed or the link is wrong.",
+    "back_to_shop": "Back to the shop"
+  },
+  "shop": {
+    "rooms": {
+      "living_room": "Living Room",
+      "bedroom": "Bedroom",
+      "dining": "Dining",
+      "office": "Office"
+    },
+    "price": {
+      "under": "Under {{amount}}",
+      "between": "{{min}} to {{max}}",
+      "over": "Over {{amount}}"
+    },
+    "sort": {
+      "featured": "Featured",
+      "newest": "Newest first",
+      "price_asc": "Price: low to high",
+      "price_desc": "Price: high to low",
+      "rating": "Top rated"
+    },
+    "wishlist_add": "Add {{name}} to wishlist",
+    "wishlist_remove": "Remove {{name}} from wishlist",
+    "filter_room": "Room",
+    "all_rooms": "All rooms",
+    "filter_category": "Category",
+    "all_categories": "All categories",
+    "filter_price": "Price",
+    "any_price": "Any price",
+    "new_only": "New arrivals only",
+    "pages_nav": "Product pages",
+    "page_n": "Page {{n}}",
+    "new_arrivals": "New arrivals",
+    "all_furniture": "All furniture",
+    "product_single": "{{total}} product",
+    "product_plural": "{{total}} products",
+    "search_label": "Search products",
+    "search_placeholder": "Search furniture",
+    "filters": "Filters",
+    "sort_label": "Sort products",
+    "remove_filter": "Remove filter {{label}}",
+    "clear_all": "Clear all",
+    "no_results_title": "No products found",
+    "no_results_text": "Try removing a filter or searching a different word.",
+    "clear_all_filters": "Clear all filters",
+    "close_filters": "Close filters",
+    "show_results": "Show {{total}}"
+  },
+  "wishlist": {
+    "title": "Your wishlist",
+    "saved_single": "{{total}} piece saved",
+    "saved_plural": "{{total}} pieces saved",
+    "empty_text": "Tap the heart on any product to save it here for later."
+  },
+  "success": {
+    "none_title": "No recent order found",
+    "none_text": "Your order details appear here right after you check out. You can also track an existing order with its number.",
+    "track_an_order": "Track an order",
+    "title": "Thank you for your order",
+    "text": "Your order <id>{{id}}</id> is confirmed. We sent the details to <email>{{email}}</email>.",
+    "estimated_delivery": "Estimated delivery",
+    "payment": "Payment",
+    "deliver_to": "Deliver to",
+    "shipping": "Shipping"
+  },
+  "tracking": {
+    "breadcrumb": "Track order",
+    "title": "Track your order",
+    "intro": "Enter your order number and the email you used at checkout.",
+    "order_number": "Order Number",
+    "order_placeholder": "e.g. LUM-20481",
+    "checking": "Checking...",
+    "submit": "Track Order",
+    "not_found": "We could not find an order with those details. Check the order number and email, then try again.",
+    "estimated": "Estimated delivery: {{time}}",
+    "current": "Current",
+    "demo_delivery": "3-5 working days",
+    "errors": { "order_required": "Order number is required." },
+    "steps": {
+      "placed": { "label": "Order placed", "text": "We received your order." },
+      "confirmed": { "label": "Confirmed", "text": "Your order is confirmed and being prepared." },
+      "dispatched": { "label": "Dispatched", "text": "Your furniture has left our warehouse." },
+      "out": { "label": "Out for delivery", "text": "Our team is on the way to you." },
+      "delivered": { "label": "Delivered", "text": "Your furniture has been delivered and set up." }
+    }
+  },
+  "notfound": {
+    "title": "This page could not be found",
+    "text": "The link may be broken, or the page may have moved. Try one of the links below.",
+    "home": "Back to home",
+    "back": "Go back",
+    "links": {
+      "shop": "Shop all furniture",
+      "blog": "Read our blog",
+      "contact": "Contact us"
+    }
+  },
+  "blog": {
+    "not_found_title": "Article not found",
+    "not_found_text": "This article may have moved or the link is wrong.",
+    "back_to_all": "Back to all articles",
+    "meta": "By {{author}} · {{date}} · {{minutes}} min read",
+    "share": "Share this article",
+    "link_copied": "Link copied",
+    "copy_link": "Copy link",
+    "related_title": "Pieces mentioned in this article",
+    "more_articles": "More articles",
+    "previous_article": "Previous article",
+    "next_article": "Next article",
+    "list_title": "Our journal",
+    "list_subtitle": "Buying guides, decor ideas and care tips from the Lumina Home team.",
+    "filter_by_category": "Filter by category",
+    "all": "All",
+    "search": "Search articles",
+    "latest": "Latest",
+    "read_article": "Read the article",
+    "no_results_title": "No articles found",
+    "no_results_text": "Try a different word or choose another category.",
+    "clear_filters": "Clear filters",
+    "pages_nav": "Blog pages",
+    "previous": "Previous",
+    "next": "Next",
+    "page_of": "Page {{current}} of {{total}}"
+  },
+  "dashboard": {
+    "my_account": "My account",
+    "hello": "Hello, {{name}}",
+    "subtitle": "Track your orders and manage your details.",
+    "sections": "Account sections",
+    "sign_out": "Sign out",
+    "status": {
+      "placed": "Order placed",
+      "dispatched": "Dispatched",
+      "delivered": "Delivered"
+    },
+    "tabs": {
+      "overview": "Overview",
+      "orders": "Orders",
+      "wishlist": "Wishlist",
+      "profile": "Profile"
+    },
+    "orders": {
+      "empty_title": "No orders yet",
+      "empty_text": "When you place an order, it will appear here.",
+      "start_shopping": "Start shopping",
+      "order_id": "Order {{id}}",
+      "qty": "Qty {{quantity}}",
+      "track": "Track this order"
+    },
+    "wishlist": {
+      "empty_title": "Your wishlist is empty",
+      "empty_text": "Save pieces you like and find them here later.",
+      "browse_shop": "Browse the shop"
+    },
+    "profile": {
+      "phone": "Phone",
+      "address": "Delivery Address",
+      "city": "City",
+      "save": "Save changes",
+      "saved": "Your details are saved.",
+      "errors": {
+        "phone_required": "Phone number is required.",
+        "address_required": "Address is required.",
+        "city_required": "City is required."
+      }
+    },
+    "overview": {
+      "total_orders": "Total orders",
+      "in_progress": "In progress",
+      "delivered": "Delivered",
+      "recent_orders": "Recent orders",
+      "view_all": "View all"
+    }
+  }
+}
