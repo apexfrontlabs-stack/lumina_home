@@ -1,7 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { Container } from '../components/common/Container'
-import { Button } from '../components/common/Button'
+import Button  from '../components/common/Button'
 
 const LINKS = [
   { labelKey: 'notfound.links.shop', to: '/shop' },

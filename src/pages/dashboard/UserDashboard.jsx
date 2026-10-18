@@ -7,8 +7,8 @@ import { Container } from '../../components/common/Container'
 import { Breadcrumbs } from '../../components/common/Breadcrumbs'
 import { Input } from '../../components/common/Input'
 import Button from '../../components/common/Button'
-import Skeleton from '../../components/common/Skeleton'
-import PaymentMethods from '../../components/payment/PaymentMethods'
+import {Skeleton} from '../../components/common/Skeleton'
+import PaymentMethods from "../../components/payment/PaymentMethod";
 import { productsData } from '../../data/productData'
 import { productImage, money } from '../../utils/helper'
 

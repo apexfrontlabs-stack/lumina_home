@@ -24,7 +24,7 @@ async function lookupOrder({ orderId, email }) {
   }
 }
 
-function OrderTracking() {
+function OrderTrackingSkeleton() {
   return (
     <section
       aria-label="Loading order tracking"
