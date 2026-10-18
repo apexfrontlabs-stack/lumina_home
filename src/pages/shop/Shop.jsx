@@ -1,4 +1,3 @@
-
 import { useEffect, useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
@@ -13,7 +12,7 @@ import {
 
 import { Container } from '../../components/common/Container'
 import { Breadcrumbs } from '../../components/common/Breadcrumbs'
-import { Skeleton } from '../../components/common/Skeleton'
+import { ProductImage } from '../../components/common/ProductImage'
 import { useCart } from '../../context/CartContext'
 import useWishlist from '../../hooks/useWishlist'
 import { productsData } from '../../data/productData'
@@ -81,7 +80,6 @@ const ROOMS = {
   },
 }
 
-// Product prices USD base currency mein hain.
 const PRICE_RANGES = [
   { key: '0-200', min: 0, max: 200 },
   { key: '200-500', min: 200, max: 500 },
@@ -116,56 +114,6 @@ const CATEGORY_SLUGS = [
   ...new Set(productsData.map((p) => p.category)),
 ]
 
-/* ---------- Product image ---------- */
-
-// Skeleton sirf image load hone tak dikhega.
-// Cached images aur failed image requests bhi handle hote hain.
-function ShopProductImage({ src, alt, className = '' }) {
-  const [imageLoaded, setImageLoaded] = useState(false)
-  const [imageError, setImageError] = useState(false)
-
-  useEffect(() => {
-    // Image source badalne par purani loading state reset karo.
-    setImageLoaded(false)
-    setImageError(false)
-  }, [src])
-
-  return (
-    <div className={`relative h-full w-full overflow-hidden bg-stone-100 ${className}`}>
-      {!imageLoaded && !imageError && (
-        <Skeleton className="absolute inset-0 z-10 h-full w-full rounded-none" />
-      )}
-
-      {imageError ? (
-        <div className="absolute inset-0 flex items-center justify-center text-sm text-neutral-500">
-          Image unavailable
-        </div>
-      ) : (
-        <img
-          src={src}
-          alt={alt}
-          loading="lazy"
-          onLoad={() => {
-            setImageLoaded(true)
-            setImageError(false)
-          }}
-          onError={() => {
-            setImageError(true)
-            setImageLoaded(false)
-          }}
-          className={`h-full w-full object-cover transition-[opacity,transform] duration-500 ${
-            imageLoaded
-              ? 'opacity-100'
-              : 'opacity-0'
-          }`}
-        />
-      )}
-    </div>
-  )
-}
-
-/* ---------- Product card ---------- */
-
 function ShopCard({ product }) {
   const { t } = useTranslation()
   const { addToCart } = useCart()
@@ -194,10 +142,10 @@ function ShopCard({ product }) {
           className="block overflow-hidden rounded-lg bg-stone-100"
         >
           <div className="aspect-[4/5] w-full">
-            <ShopProductImage
+            <ProductImage
               src={productImage(product)}
               alt={name}
-              className="transition-transform duration-500 group-hover:scale-105"
+              className="h-full w-full transition-transform duration-500 group-hover:scale-105"
             />
           </div>
         </Link>
@@ -275,8 +223,6 @@ function ShopCard({ product }) {
     </li>
   )
 }
-
-/* ---------- Filters ---------- */
 
 function FilterGroup({ title, children }) {
   return (
@@ -392,8 +338,6 @@ function FilterPanel({ filters, update, categories }) {
   )
 }
 
-/* ---------- Pagination ---------- */
-
 function Pagination({ page, totalPages, onChange }) {
   const { t } = useTranslation()
 
@@ -447,8 +391,6 @@ function Pagination({ page, totalPages, onChange }) {
   )
 }
 
-/* ---------- Page ---------- */
-
 export default function Shop() {
   const { t, i18n } = useTranslation()
   const { formatPrice } = useCurrency()
@@ -469,7 +411,6 @@ export default function Shop() {
     Number(params.get('page')) || 1
   )
 
-  // Categories current language mein sort hoti hain.
   const categories = useMemo(
     () =>
       CATEGORY_SLUGS.map((slug) => ({
@@ -484,7 +425,6 @@ export default function Shop() {
     [t, i18n.language]
   )
 
-  // Filter update par pagination ko page 1 par reset karo.
   const update = (changes) => {
     const next = new URLSearchParams(params)
 
@@ -555,7 +495,6 @@ export default function Shop() {
     }
 
     return list
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [params, t])
 
   const totalPages = Math.max(
@@ -574,7 +513,6 @@ export default function Shop() {
     window.scrollTo({ top: 0 })
   }, [currentPage])
 
-  // Mobile filter drawer: Escape se close aur close hone par scroll restore.
   useEffect(() => {
     if (!drawerOpen) return undefined
 
@@ -650,7 +588,6 @@ export default function Shop() {
           </p>
         </header>
 
-        {/* Search aur sorting toolbar. */}
         <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
           <div className="relative flex-1">
             <label htmlFor="shop-search" className="sr-only">
@@ -711,7 +648,6 @@ export default function Shop() {
           </div>
         </div>
 
-        {/* Active filter chips. */}
         {chips.length > 0 && (
           <div className="mt-4 flex flex-wrap items-center gap-2">
             {chips.map((chip) => (
@@ -740,7 +676,6 @@ export default function Shop() {
         )}
 
         <div className="mt-8 grid gap-10 lg:grid-cols-4">
-          {/* Desktop sidebar. */}
           <aside
             aria-label={t('shop.filters')}
             className="hidden lg:block"
@@ -754,7 +689,6 @@ export default function Shop() {
             </div>
           </aside>
 
-          {/* Product results. */}
           <div className="lg:col-span-3">
             {visible.length > 0 ? (
               <ul className="grid grid-cols-2 gap-x-3 gap-y-8 sm:gap-x-5 xl:grid-cols-3">
@@ -796,7 +730,6 @@ export default function Shop() {
         </div>
       </Container>
 
-      {/* Mobile filter drawer. */}
       {drawerOpen && (
         <div
           className="fixed inset-0 z-50 lg:hidden"

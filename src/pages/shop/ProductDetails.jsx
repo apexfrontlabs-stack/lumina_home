@@ -1,5 +1,4 @@
-
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import {
@@ -16,7 +15,7 @@ import {
 import { Container } from '../../components/common/Container'
 import { Breadcrumbs } from '../../components/common/Breadcrumbs'
 import { Accordion } from '../../components/common/Accordion'
-import { Skeleton } from '../../components/common/Skeleton'
+import { ProductImage } from '../../components/common/ProductImage'
 
 import { useCart } from '../../context/CartContext'
 import useWishlist from '../../hooks/useWishlist'
@@ -49,70 +48,6 @@ function RatingStars({ value }) {
         />
       ))}
     </span>
-  )
-}
-
-// Image load hone tak skeleton dikhata hai aur cached images ko bhi check karta hai.
-function ProductImage({
-  src,
-  alt,
-  loading = 'lazy',
-  className = '',
-}) {
-  const imageRef = useRef(null)
-  const [imageLoaded, setImageLoaded] = useState(false)
-  const [imageError, setImageError] = useState(false)
-
-  useEffect(() => {
-    // Naya image source aane par loading state reset karo.
-    setImageLoaded(false)
-    setImageError(false)
-
-    const image = imageRef.current
-
-    // Browser image pehle hi load kar chuka ho to event ka wait mat karo.
-    if (image?.complete) {
-      if (image.naturalWidth > 0) {
-        setImageLoaded(true)
-      } else if (image.currentSrc || image.src) {
-        setImageError(true)
-      }
-    }
-  }, [src])
-
-  return (
-    <div
-      className={`relative overflow-hidden bg-stone-100 ${className}`}
-    >
-      {/* Image load hone tak skeleton overlay visible rahega. */}
-      {!imageLoaded && !imageError && (
-        <Skeleton className="absolute inset-0 z-10 h-full w-full rounded-none" />
-      )}
-
-      {imageError ? (
-        <div className="flex h-full w-full items-center justify-center text-sm text-neutral-500">
-          Image unavailable
-        </div>
-      ) : (
-        <img
-          ref={imageRef}
-          src={src}
-          alt={alt}
-          loading={loading}
-          onLoad={() => {
-            setImageLoaded(true)
-            setImageError(false)
-          }}
-          onError={() => {
-            setImageError(true)
-            setImageLoaded(false)
-          }}
-          className={`h-full w-full object-cover transition-opacity duration-300 ${
-            imageLoaded ? 'opacity-100' : 'opacity-0'
-          }`}
-        />
-      )}
-    </div>
   )
 }
 
@@ -426,7 +361,6 @@ function ProductView({ product }) {
         )}
       </Container>
 
-      {/* Mobile screens par sticky add-to-cart bar. */}
       <div className="fixed inset-x-0 bottom-0 z-30 flex items-center gap-3 border-t border-neutral-200 bg-white px-4 py-3 lg:hidden">
         <div className="min-w-0">
           <p className="truncate text-xs text-brand-gray">{name}</p>

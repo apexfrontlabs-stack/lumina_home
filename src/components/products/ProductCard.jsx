@@ -25,7 +25,6 @@ export function ProductCard({ product, onAddToCart, className = '' }) {
   } = product
   const soldOut = badge === 'soldout'
 
-  // Naam nameKey se; key na mile to original text, crash nahi hoga
   const translatedName = t(nameKey ?? `products.${String(id).replace(/-/g, '_')}.name`, {
     defaultValue: name ?? String(id),
   })
@@ -33,7 +32,6 @@ export function ProductCard({ product, onAddToCart, className = '' }) {
     defaultValue: category,
   })
 
-  // productsData mein image field nahi hai, to helper se banti hai
   const mainImage = image ?? productImage(product)
   const secondImage = hoverImage ?? (imagesCount > 1 ? productImage(product, 2) : undefined)
 
