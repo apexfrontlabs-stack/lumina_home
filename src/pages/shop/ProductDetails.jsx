@@ -1,18 +1,33 @@
 
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { Check, Heart, Minus, Plus, Star, Truck, ShieldCheck, RotateCcw } from 'lucide-react'
+import {
+  Check,
+  Heart,
+  Minus,
+  Plus,
+  Star,
+  Truck,
+  ShieldCheck,
+  RotateCcw,
+} from 'lucide-react'
+
 import { Container } from '../../components/common/Container'
 import { Breadcrumbs } from '../../components/common/Breadcrumbs'
 import { Accordion } from '../../components/common/Accordion'
 import { Skeleton } from '../../components/common/Skeleton'
+
 import { useCart } from '../../context/CartContext'
 import useWishlist from '../../hooks/useWishlist'
 import { productsData } from '../../data/productData'
 import { productImage } from '../../utils/helper'
 import { useCurrency } from '../../context/CurrencyContext'
-import { productName, productDescription, categoryLabel } from '../../utils/i18nHelper'
+import {
+  productName,
+  productDescription,
+  categoryLabel,
+} from '../../utils/i18nHelper'
 import { SITE } from '@/config/siteInfo'
 
 const MAX_QTY = 10
@@ -26,24 +41,50 @@ function RatingStars({ value }) {
         <Star
           key={n}
           size={16}
-          className={n <= full ? 'fill-amber-400 text-amber-400' : 'text-neutral-300'}
+          className={
+            n <= full
+              ? 'fill-amber-400 text-amber-400'
+              : 'text-neutral-300'
+          }
         />
       ))}
     </span>
   )
 }
 
-function ProductImage({ src, alt, loading = 'lazy', className = '' }) {
+// Image load hone tak skeleton dikhata hai aur cached images ko bhi check karta hai.
+function ProductImage({
+  src,
+  alt,
+  loading = 'lazy',
+  className = '',
+}) {
+  const imageRef = useRef(null)
   const [imageLoaded, setImageLoaded] = useState(false)
   const [imageError, setImageError] = useState(false)
 
   useEffect(() => {
+    // Naya image source aane par loading state reset karo.
     setImageLoaded(false)
     setImageError(false)
+
+    const image = imageRef.current
+
+    // Browser image pehle hi load kar chuka ho to event ka wait mat karo.
+    if (image?.complete) {
+      if (image.naturalWidth > 0) {
+        setImageLoaded(true)
+      } else if (image.currentSrc || image.src) {
+        setImageError(true)
+      }
+    }
   }, [src])
 
   return (
-    <div className={`relative overflow-hidden bg-stone-100 ${className}`}>
+    <div
+      className={`relative overflow-hidden bg-stone-100 ${className}`}
+    >
+      {/* Image load hone tak skeleton overlay visible rahega. */}
       {!imageLoaded && !imageError && (
         <Skeleton className="absolute inset-0 z-10 h-full w-full rounded-none" />
       )}
@@ -54,11 +95,18 @@ function ProductImage({ src, alt, loading = 'lazy', className = '' }) {
         </div>
       ) : (
         <img
+          ref={imageRef}
           src={src}
           alt={alt}
           loading={loading}
-          onLoad={() => setImageLoaded(true)}
-          onError={() => setImageError(true)}
+          onLoad={() => {
+            setImageLoaded(true)
+            setImageError(false)
+          }}
+          onError={() => {
+            setImageError(true)
+            setImageLoaded(false)
+          }}
           className={`h-full w-full object-cover transition-opacity duration-300 ${
             imageLoaded ? 'opacity-100' : 'opacity-0'
           }`}
@@ -73,6 +121,7 @@ function ProductView({ product }) {
   const { addToCart } = useCart()
   const { formatPrice } = useCurrency()
   const { ids = [], toggle } = useWishlist()
+
   const [activeImage, setActiveImage] = useState(1)
   const [quantity, setQuantity] = useState(1)
   const [added, setAdded] = useState(false)
@@ -82,15 +131,25 @@ function ProductView({ product }) {
   const description = productDescription(t, product)
   const category = categoryLabel(t, product.category)
 
-  const images = Array.from({ length: product.imagesCount }, (_, i) => i + 1)
+  const images = Array.from(
+    { length: product.imagesCount },
+    (_, i) => i + 1
+  )
 
   const related = [
-    ...productsData.filter((p) => p.category === product.category && p.id !== product.id),
-    ...productsData.filter((p) => p.category !== product.category && p.id !== product.id),
+    ...productsData.filter(
+      (p) => p.category === product.category && p.id !== product.id
+    ),
+    ...productsData.filter(
+      (p) => p.category !== product.category && p.id !== product.id
+    ),
   ].slice(0, 4)
 
   const handleAdd = () => {
-    addToCart({ ...product, image: productImage(product) }, quantity)
+    addToCart(
+      { ...product, image: productImage(product) },
+      quantity
+    )
     setAdded(true)
     setTimeout(() => setAdded(false), 1800)
   }
@@ -98,7 +157,11 @@ function ProductView({ product }) {
   const accordionItems = [
     {
       title: t('product.details_title'),
-      content: t('product.details_text', { description, sku: product.sku, category }),
+      content: t('product.details_text', {
+        description,
+        sku: product.sku,
+        category,
+      }),
     },
     {
       title: t('product.delivery_title'),
@@ -106,7 +169,9 @@ function ProductView({ product }) {
     },
     {
       title: t('product.returns_title'),
-      content: t('product.returns_text', { days: SITE.returnDays }),
+      content: t('product.returns_text', {
+        days: SITE.returnDays,
+      }),
     },
   ]
 
@@ -126,7 +191,10 @@ function ProductView({ product }) {
             <ProductImage
               key={`${product.id}-${activeImage}`}
               src={productImage(product, activeImage)}
-              alt={t('product.photo_alt', { name, n: activeImage })}
+              alt={t('product.photo_alt', {
+                name,
+                n: activeImage,
+              })}
               loading="eager"
               className="aspect-square rounded-lg sm:aspect-[4/3] lg:aspect-square"
             />
@@ -139,9 +207,13 @@ function ProductView({ product }) {
                       type="button"
                       onClick={() => setActiveImage(n)}
                       aria-label={t('product.show_photo', { n })}
-                      aria-current={activeImage === n ? 'true' : undefined}
+                      aria-current={
+                        activeImage === n ? 'true' : undefined
+                      }
                       className={`aspect-square w-full overflow-hidden rounded-md border-2 bg-stone-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-dark focus-visible:ring-offset-2 ${
-                        activeImage === n ? 'border-brand-dark' : 'border-transparent hover:border-neutral-300'
+                        activeImage === n
+                          ? 'border-brand-dark'
+                          : 'border-transparent hover:border-neutral-300'
                       }`}
                     >
                       <ProductImage
@@ -159,6 +231,7 @@ function ProductView({ product }) {
           <div>
             <div className="flex flex-wrap items-center gap-2">
               <p className="text-sm text-brand-gray">{category}</p>
+
               {product.isNew && (
                 <span className="rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs font-medium text-brand-dark">
                   {t('badge.new')}
@@ -172,6 +245,7 @@ function ProductView({ product }) {
 
             <div className="mt-3 flex items-center gap-3">
               <RatingStars value={product.rating} />
+
               <span className="text-sm text-brand-gray">
                 {t('product.rating_text', {
                   rating: product.rating.toFixed(1),
@@ -189,9 +263,13 @@ function ProductView({ product }) {
             </p>
 
             <p
-              className={`mt-4 text-sm font-medium ${product.inStock ? 'text-green-700' : 'text-red-600'}`}
+              className={`mt-4 text-sm font-medium ${
+                product.inStock ? 'text-green-700' : 'text-red-600'
+              }`}
             >
-              {product.inStock ? t('product.in_stock') : t('product.out_of_stock')}
+              {product.inStock
+                ? t('product.in_stock')
+                : t('product.out_of_stock')}
             </p>
 
             <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center">
@@ -203,21 +281,28 @@ function ProductView({ product }) {
                 <button
                   type="button"
                   aria-label={t('common.decrease_quantity')}
-                  onClick={() => setQuantity((q) => Math.max(1, q - 1))}
+                  onClick={() =>
+                    setQuantity((q) => Math.max(1, q - 1))
+                  }
                   disabled={quantity <= 1}
                   className="flex h-full w-11 items-center justify-center text-brand-dark hover:bg-neutral-100 disabled:opacity-40"
                 >
                   <Minus size={16} aria-hidden="true" />
                 </button>
 
-                <span className="w-10 text-center text-sm tabular-nums" aria-live="polite">
+                <span
+                  className="w-10 text-center text-sm tabular-nums"
+                  aria-live="polite"
+                >
                   {quantity}
                 </span>
 
                 <button
                   type="button"
                   aria-label={t('common.increase_quantity')}
-                  onClick={() => setQuantity((q) => Math.min(MAX_QTY, q + 1))}
+                  onClick={() =>
+                    setQuantity((q) => Math.min(MAX_QTY, q + 1))
+                  }
                   disabled={quantity >= MAX_QTY}
                   className="flex h-full w-11 items-center justify-center text-brand-dark hover:bg-neutral-100 disabled:opacity-40"
                 >
@@ -233,7 +318,8 @@ function ProductView({ product }) {
               >
                 {added ? (
                   <>
-                    <Check size={16} aria-hidden="true" /> {t('product.added_to_cart')}
+                    <Check size={16} aria-hidden="true" />
+                    {t('product.added_to_cart')}
                   </>
                 ) : (
                   t('product.add_to_cart')
@@ -244,13 +330,19 @@ function ProductView({ product }) {
                 type="button"
                 onClick={() => toggle(product.id)}
                 aria-pressed={wished}
-                aria-label={wished ? t('common.remove_from_wishlist') : t('common.add_to_wishlist')}
+                aria-label={
+                  wished
+                    ? t('common.remove_from_wishlist')
+                    : t('common.add_to_wishlist')
+                }
                 className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-md border border-neutral-300 text-brand-dark hover:border-brand-dark focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-dark focus-visible:ring-offset-2"
               >
                 <Heart
                   size={18}
                   aria-hidden="true"
-                  className={wished ? 'fill-red-500 text-red-500' : ''}
+                  className={
+                    wished ? 'fill-red-500 text-red-500' : ''
+                  }
                 />
               </button>
             </div>
@@ -259,7 +351,10 @@ function ProductView({ product }) {
               {added && (
                 <p role="status" className="mt-3 text-sm text-brand-gray">
                   {t('product.qty_added', { quantity })}{' '}
-                  <Link to="/cart" className="font-medium text-brand-dark underline underline-offset-4">
+                  <Link
+                    to="/cart"
+                    className="font-medium text-brand-dark underline underline-offset-4"
+                  >
                     {t('product.view_cart')}
                   </Link>
                 </p>
@@ -268,13 +363,20 @@ function ProductView({ product }) {
 
             <ul className="mt-6 grid gap-3 border-y border-neutral-200 py-5 sm:grid-cols-3">
               <li className="flex items-center gap-2 text-sm text-brand-dark">
-                <Truck size={18} aria-hidden="true" /> {t('product.trust_delivery')}
+                <Truck size={18} aria-hidden="true" />
+                {t('product.trust_delivery')}
               </li>
+
               <li className="flex items-center gap-2 text-sm text-brand-dark">
-                <RotateCcw size={18} aria-hidden="true" /> {t('product.trust_returns', { days: SITE.returnDays })}
+                <RotateCcw size={18} aria-hidden="true" />
+                {t('product.trust_returns', {
+                  days: SITE.returnDays,
+                })}
               </li>
+
               <li className="flex items-center gap-2 text-sm text-brand-dark">
-                <ShieldCheck size={18} aria-hidden="true" /> {t('product.trust_warranty')}
+                <ShieldCheck size={18} aria-hidden="true" />
+                {t('product.trust_warranty')}
               </li>
             </ul>
 
@@ -298,7 +400,10 @@ function ProductView({ product }) {
 
                 return (
                   <li key={item.id}>
-                    <Link to={`/product/${item.id}`} className="group block">
+                    <Link
+                      to={`/product/${item.id}`}
+                      className="group block"
+                    >
                       <ProductImage
                         src={productImage(item)}
                         alt={itemName}
@@ -321,6 +426,7 @@ function ProductView({ product }) {
         )}
       </Container>
 
+      {/* Mobile screens par sticky add-to-cart bar. */}
       <div className="fixed inset-x-0 bottom-0 z-30 flex items-center gap-3 border-t border-neutral-200 bg-white px-4 py-3 lg:hidden">
         <div className="min-w-0">
           <p className="truncate text-xs text-brand-gray">{name}</p>
@@ -337,7 +443,8 @@ function ProductView({ product }) {
         >
           {added ? (
             <>
-              <Check size={16} aria-hidden="true" /> {t('product.added')}
+              <Check size={16} aria-hidden="true" />
+              {t('product.added')}
             </>
           ) : (
             t('product.add_to_cart')
@@ -351,6 +458,7 @@ function ProductView({ product }) {
 export default function ProductDetail() {
   const { t } = useTranslation()
   const { id } = useParams()
+
   const product = productsData.find((p) => p.id === id)
   const name = product ? productName(t, product) : ''
 
@@ -359,7 +467,9 @@ export default function ProductDetail() {
   }, [id])
 
   useEffect(() => {
-    if (name) document.title = `${name} | Lumina Home`
+    if (name) {
+      document.title = `${name} | Lumina Home`
+    }
   }, [name])
 
   if (!product) {
