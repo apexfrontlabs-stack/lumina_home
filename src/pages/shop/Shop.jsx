@@ -12,7 +12,6 @@ import {
 
 import { Container } from '../../components/common/Container'
 import { Breadcrumbs } from '../../components/common/Breadcrumbs'
-import { ProductImage } from '../../components/common/ProductImage'
 import { useCart } from '../../context/CartContext'
 import useWishlist from '../../hooks/useWishlist'
 import { productsData } from '../../data/productData'
@@ -141,11 +140,12 @@ function ShopCard({ product }) {
           to={`/product/${product.id}`}
           className="block overflow-hidden rounded-lg bg-stone-100"
         >
-          <div className="aspect-[4/5] w-full">
-            <ProductImage
+          <div className="aspect-[4/5] w-full overflow-hidden bg-stone-100">
+            <img
               src={productImage(product)}
               alt={name}
-              className="h-full w-full transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
+              className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
           </div>
         </Link>
