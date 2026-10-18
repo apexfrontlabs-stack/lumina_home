@@ -1,3 +1,4 @@
+// src/pages/shop/Shop.jsx
 import { useEffect, useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
@@ -7,8 +8,9 @@ import { Breadcrumbs } from '../../components/common/Breadcrumbs'
 import { useCart } from '../../context/CartContext'
 import useWishlist from '../../hooks/useWishlist'
 import { productsData } from '../../data/productData'
-import { productImage, money } from '../../utils/helper'
+import { productImage } from '../../utils/helper'
 import { productName, productDescription, categoryLabel } from '../../utils/i18nHelper'
+import { useCurrency } from '../../context/CurrencyContext'
 
 const PER_PAGE = 12
 
@@ -31,6 +33,7 @@ const ROOMS = {
   },
 }
 
+// Ye numbers base currency (USD) mein hain, taake products ke price se mel khayein
 const PRICE_RANGES = [
   { key: '0-200', min: 0, max: 200 },
   { key: '200-500', min: 200, max: 500 },
@@ -38,10 +41,11 @@ const PRICE_RANGES = [
   { key: '1000-', min: 1000, max: Infinity },
 ]
 
-const priceLabel = (t, r) => {
-  if (r.max === Infinity) return t('shop.price.over', { amount: money(r.min) })
-  if (r.min === 0) return t('shop.price.under', { amount: money(r.max) })
-  return t('shop.price.between', { min: money(r.min), max: money(r.max) })
+// formatPrice bahar se aata hai, kyunke ye function component ke bahar hai
+const priceLabel = (t, r, formatPrice) => {
+  if (r.max === Infinity) return t('shop.price.over', { amount: formatPrice(r.min) })
+  if (r.min === 0) return t('shop.price.under', { amount: formatPrice(r.max) })
+  return t('shop.price.between', { min: formatPrice(r.min), max: formatPrice(r.max) })
 }
 
 const SORTS = [
@@ -60,6 +64,7 @@ function ShopCard({ product }) {
   const { t } = useTranslation()
   const { addToCart } = useCart()
   const { ids = [], toggle } = useWishlist()
+  const { formatPrice } = useCurrency()
   const [added, setAdded] = useState(false)
   const wished = ids.includes(product.id)
   const name = productName(t, product)
@@ -113,7 +118,7 @@ function ShopCard({ product }) {
           {name}
         </Link>
         <div className="mt-1 flex items-center justify-between gap-2">
-          <p className="text-sm font-semibold text-brand-dark sm:text-base">{money(product.price)}</p>
+          <p className="text-sm font-semibold text-brand-dark sm:text-base">{formatPrice(product.price)}</p>
           <span className="inline-flex items-center gap-1 text-xs text-brand-gray">
             <Star size={13} className="fill-amber-400 text-amber-400" aria-hidden="true" />
             <span className="font-medium text-brand-dark">{product.rating.toFixed(1)}</span>
@@ -172,6 +177,7 @@ function RadioRow({ name, checked, onChange, label, count }) {
 
 function FilterPanel({ filters, update, categories }) {
   const { t } = useTranslation()
+  const { formatPrice } = useCurrency()
   const { category, room, price, onlyNew } = filters
 
   return (
@@ -216,7 +222,7 @@ function FilterPanel({ filters, update, categories }) {
             name="price"
             checked={price === r.key}
             onChange={() => update({ price: r.key })}
-            label={priceLabel(t, r)}
+            label={priceLabel(t, r, formatPrice)}
           />
         ))}
       </FilterGroup>
@@ -285,6 +291,7 @@ function Pagination({ page, totalPages, onChange }) {
 
 export default function Shop() {
   const { t, i18n } = useTranslation()
+  const { formatPrice } = useCurrency()
   const [params, setParams] = useSearchParams()
   const [drawerOpen, setDrawerOpen] = useState(false)
 
@@ -381,7 +388,7 @@ export default function Shop() {
   const chips = [
     filters.room && { key: 'room', label: t(ROOMS[filters.room]?.labelKey ?? 'header.nav.shop') },
     filters.category && { key: 'category', label: categoryLabel(t, filters.category) },
-    priceRange && { key: 'price', label: priceLabel(t, priceRange) },
+    priceRange && { key: 'price', label: priceLabel(t, priceRange, formatPrice) },
     filters.onlyNew && { key: 'filter', label: t('shop.new_arrivals') },
     filters.q && { key: 'q', label: `"${filters.q}"` },
   ].filter(Boolean)

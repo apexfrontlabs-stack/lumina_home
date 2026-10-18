@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
@@ -5,11 +6,12 @@ import { Check, Heart, Minus, Plus, Star, Truck, ShieldCheck, RotateCcw } from '
 import { Container } from '../../components/common/Container'
 import { Breadcrumbs } from '../../components/common/Breadcrumbs'
 import { Accordion } from '../../components/common/Accordion'
+import { Skeleton } from '../../components/common/Skeleton'
 import { useCart } from '../../context/CartContext'
 import useWishlist from '../../hooks/useWishlist'
 import { productsData } from '../../data/productData'
 import { productImage } from '../../utils/helper'
-import { useCurrency } from '../../context/CurrencyContext' 
+import { useCurrency } from '../../context/CurrencyContext'
 import { productName, productDescription, categoryLabel } from '../../utils/i18nHelper'
 import { SITE } from '@/config/siteInfo'
 
@@ -17,6 +19,7 @@ const MAX_QTY = 10
 
 function RatingStars({ value }) {
   const full = Math.round(value)
+
   return (
     <span className="inline-flex items-center gap-0.5" aria-hidden="true">
       {[1, 2, 3, 4, 5].map((n) => (
@@ -30,10 +33,45 @@ function RatingStars({ value }) {
   )
 }
 
+function ProductImage({ src, alt, loading = 'lazy', className = '' }) {
+  const [imageLoaded, setImageLoaded] = useState(false)
+  const [imageError, setImageError] = useState(false)
+
+  useEffect(() => {
+    setImageLoaded(false)
+    setImageError(false)
+  }, [src])
+
+  return (
+    <div className={`relative overflow-hidden bg-stone-100 ${className}`}>
+      {!imageLoaded && !imageError && (
+        <Skeleton className="absolute inset-0 z-10 h-full w-full rounded-none" />
+      )}
+
+      {imageError ? (
+        <div className="flex h-full w-full items-center justify-center text-sm text-neutral-500">
+          Image unavailable
+        </div>
+      ) : (
+        <img
+          src={src}
+          alt={alt}
+          loading={loading}
+          onLoad={() => setImageLoaded(true)}
+          onError={() => setImageError(true)}
+          className={`h-full w-full object-cover transition-opacity duration-300 ${
+            imageLoaded ? 'opacity-100' : 'opacity-0'
+          }`}
+        />
+      )}
+    </div>
+  )
+}
+
 function ProductView({ product }) {
   const { t } = useTranslation()
   const { addToCart } = useCart()
-  const { formatPrice } = useCurrency() 
+  const { formatPrice } = useCurrency()
   const { ids = [], toggle } = useWishlist()
   const [activeImage, setActiveImage] = useState(1)
   const [quantity, setQuantity] = useState(1)
@@ -85,14 +123,13 @@ function ProductView({ product }) {
 
         <div className="mt-8 grid gap-8 lg:grid-cols-2 lg:gap-14">
           <div>
-            <div className="aspect-square overflow-hidden rounded-lg bg-stone-100 sm:aspect-[4/3] lg:aspect-square">
-              <img
-                src={productImage(product, activeImage)}
-                alt={t('product.photo_alt', { name, n: activeImage })}
-                loading="eager"
-                className="h-full w-full object-cover"
-              />
-            </div>
+            <ProductImage
+              key={`${product.id}-${activeImage}`}
+              src={productImage(product, activeImage)}
+              alt={t('product.photo_alt', { name, n: activeImage })}
+              loading="eager"
+              className="aspect-square rounded-lg sm:aspect-[4/3] lg:aspect-square"
+            />
 
             {images.length > 1 && (
               <ul className="mt-3 grid grid-cols-4 gap-2 sm:grid-cols-5 sm:gap-3 md:grid-cols-6">
@@ -107,11 +144,10 @@ function ProductView({ product }) {
                         activeImage === n ? 'border-brand-dark' : 'border-transparent hover:border-neutral-300'
                       }`}
                     >
-                      <img
+                      <ProductImage
                         src={productImage(product, n)}
                         alt=""
-                        loading="lazy"
-                        className="h-full w-full object-cover"
+                        className="h-full w-full rounded-none"
                       />
                     </button>
                   </li>
@@ -144,7 +180,9 @@ function ProductView({ product }) {
               </span>
             </div>
 
-            <p className="mt-5 text-3xl font-semibold text-brand-dark">{formatPrice(product.price)}</p>
+            <p className="mt-5 text-3xl font-semibold text-brand-dark">
+              {formatPrice(product.price)}
+            </p>
 
             <p className="mt-4 max-w-xl text-sm leading-relaxed text-brand-gray sm:text-base">
               {description}
@@ -171,9 +209,11 @@ function ProductView({ product }) {
                 >
                   <Minus size={16} aria-hidden="true" />
                 </button>
+
                 <span className="w-10 text-center text-sm tabular-nums" aria-live="polite">
                   {quantity}
                 </span>
+
                 <button
                   type="button"
                   aria-label={t('common.increase_quantity')}
@@ -199,6 +239,7 @@ function ProductView({ product }) {
                   t('product.add_to_cart')
                 )}
               </button>
+
               <button
                 type="button"
                 onClick={() => toggle(product.id)}
@@ -239,7 +280,9 @@ function ProductView({ product }) {
 
             <Accordion items={accordionItems} className="mt-6" />
 
-            <p className="mt-5 text-xs text-brand-gray">{t('product.sku', { sku: product.sku })}</p>
+            <p className="mt-5 text-xs text-brand-gray">
+              {t('product.sku', { sku: product.sku })}
+            </p>
           </div>
         </div>
 
@@ -248,25 +291,27 @@ function ProductView({ product }) {
             <h2 className="font-serif text-2xl font-light tracking-wide text-brand-dark sm:text-3xl">
               {t('product.related_title')}
             </h2>
+
             <ul className="mt-6 grid grid-cols-2 gap-x-3 gap-y-8 sm:gap-x-5 lg:grid-cols-4">
               {related.map((item) => {
                 const itemName = productName(t, item)
+
                 return (
                   <li key={item.id}>
                     <Link to={`/product/${item.id}`} className="group block">
-                      <div className="aspect-[4/5] overflow-hidden rounded-lg bg-stone-100">
-                        <img
-                          src={productImage(item)}
-                          alt={itemName}
-                          loading="lazy"
-                          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                        />
-                      </div>
+                      <ProductImage
+                        src={productImage(item)}
+                        alt={itemName}
+                        className="aspect-[4/5] rounded-lg transition-transform duration-500 group-hover:scale-[1.02]"
+                      />
+
                       <p className="mt-3 line-clamp-2 text-sm font-medium text-brand-dark group-hover:underline sm:text-base">
                         {itemName}
                       </p>
-                      {/* 🚀 Dynamic Currency Conversion applied to Related Products */}
-                      <p className="mt-1 text-sm font-semibold text-brand-dark">{formatPrice(item.price)}</p>
+
+                      <p className="mt-1 text-sm font-semibold text-brand-dark">
+                        {formatPrice(item.price)}
+                      </p>
                     </Link>
                   </li>
                 )
@@ -276,13 +321,14 @@ function ProductView({ product }) {
         )}
       </Container>
 
-      {/* Mobile sticky bar */}
       <div className="fixed inset-x-0 bottom-0 z-30 flex items-center gap-3 border-t border-neutral-200 bg-white px-4 py-3 lg:hidden">
         <div className="min-w-0">
           <p className="truncate text-xs text-brand-gray">{name}</p>
-          {/* 🚀 Dynamic Currency Conversion applied to Mobile Sticky Total Price */}
-          <p className="text-base font-semibold text-brand-dark">{formatPrice(product.price * quantity)}</p>
+          <p className="text-base font-semibold text-brand-dark">
+            {formatPrice(product.price * quantity)}
+          </p>
         </div>
+
         <button
           type="button"
           onClick={handleAdd}
@@ -324,7 +370,11 @@ export default function ProductDetail() {
             <h1 className="font-serif text-2xl font-light tracking-wide text-brand-dark sm:text-3xl">
               {t('product.not_found_title')}
             </h1>
-            <p className="mt-3 text-sm text-brand-gray sm:text-base">{t('product.not_found_text')}</p>
+
+            <p className="mt-3 text-sm text-brand-gray sm:text-base">
+              {t('product.not_found_text')}
+            </p>
+
             <Link
               to="/shop"
               className="mt-6 inline-block text-sm font-medium text-brand-dark underline underline-offset-4"

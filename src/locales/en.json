@@ -973,5 +973,54 @@
       "recent_orders": "Recent orders",
       "view_all": "View all"
     }
+  },
+  "payment": {
+    "tab": "Payment methods",
+    "title": "Payment methods",
+    "subtitle": "Save a card to check out faster next time.",
+    "secure_note": "For your security, we never store your full card number or security code. Only the last 4 digits are kept on this device.",
+    "saved_cards": "Saved cards",
+    "empty_title": "No saved cards",
+    "empty_text": "Add a card to pay faster next time.",
+    "add_card": "Add a card",
+    "cancel": "Cancel",
+    "form_title": "Add a new card",
+    "card_holder": "Name on card",
+    "card_holder_placeholder": "As shown on the card",
+    "card_number": "Card number",
+    "card_number_placeholder": "1234 5678 9012 3456",
+    "expiry": "Expiry date",
+    "expiry_placeholder": "MM/YY",
+    "cvv": "Security code (CVV)",
+    "cvv_placeholder": "123",
+    "make_default": "Use as my default card",
+    "save_card": "Save card",
+    "default_badge": "Default",
+    "set_default": "Set as default",
+    "set_default_aria": "Set card ending in {{last4}} as default",
+    "remove": "Remove",
+    "remove_aria": "Remove card ending in {{last4}}",
+    "card_ending": "{{brand}} ending in {{last4}}",
+    "expires": "Expires {{date}}",
+    "saved_message": "Your card has been saved.",
+    "removed_message": "The card has been removed.",
+    "default_message": "Your default card has been updated.",
+    "brands": {
+      "visa": "Visa",
+      "mastercard": "Mastercard",
+      "amex": "American Express",
+      "unionpay": "UnionPay",
+      "unknown": "Card"
+    },
+    "errors": {
+      "holder_required": "Name on card is required.",
+      "number_required": "Card number is required.",
+      "number_invalid": "Enter a valid card number.",
+      "expiry_required": "Expiry date is required.",
+      "expiry_invalid": "Enter a valid expiry date (MM/YY).",
+      "expiry_past": "This card has expired.",
+      "cvv_required": "Security code is required.",
+      "cvv_invalid": "Enter a valid security code."
+    }
   }
 }

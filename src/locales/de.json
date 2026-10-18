@@ -973,5 +973,54 @@
       "recent_orders": "Letzte Bestellungen",
       "view_all": "Alle ansehen"
     }
+  },
+  "payment": {
+    "tab": "Zahlungsarten",
+    "title": "Zahlungsarten",
+    "subtitle": "Speichern Sie eine Karte, um beim nächsten Mal schneller zu bezahlen.",
+    "secure_note": "Zu Ihrer Sicherheit speichern wir niemals Ihre vollständige Kartennummer oder Ihren Sicherheitscode. Auf diesem Gerät werden nur die letzten 4 Ziffern gespeichert.",
+    "saved_cards": "Gespeicherte Karten",
+    "empty_title": "Keine gespeicherten Karten",
+    "empty_text": "Fügen Sie eine Karte hinzu, um beim nächsten Mal schneller zu bezahlen.",
+    "add_card": "Karte hinzufügen",
+    "cancel": "Abbrechen",
+    "form_title": "Neue Karte hinzufügen",
+    "card_holder": "Name auf der Karte",
+    "card_holder_placeholder": "Wie auf der Karte angegeben",
+    "card_number": "Kartennummer",
+    "card_number_placeholder": "1234 5678 9012 3456",
+    "expiry": "Ablaufdatum",
+    "expiry_placeholder": "MM/JJ",
+    "cvv": "Sicherheitscode (CVV)",
+    "cvv_placeholder": "123",
+    "make_default": "Als meine Standardkarte verwenden",
+    "save_card": "Karte speichern",
+    "default_badge": "Standard",
+    "set_default": "Als Standard festlegen",
+    "set_default_aria": "Karte mit den Endziffern {{last4}} als Standard festlegen",
+    "remove": "Entfernen",
+    "remove_aria": "Karte mit den Endziffern {{last4}} entfernen",
+    "card_ending": "{{brand}} mit den Endziffern {{last4}}",
+    "expires": "Läuft ab: {{date}}",
+    "saved_message": "Ihre Karte wurde gespeichert.",
+    "removed_message": "Die Karte wurde entfernt.",
+    "default_message": "Ihre Standardkarte wurde aktualisiert.",
+    "brands": {
+      "visa": "Visa",
+      "mastercard": "Mastercard",
+      "amex": "American Express",
+      "unionpay": "UnionPay",
+      "unknown": "Karte"
+    },
+    "errors": {
+      "holder_required": "Der Name auf der Karte ist erforderlich.",
+      "number_required": "Die Kartennummer ist erforderlich.",
+      "number_invalid": "Geben Sie eine gültige Kartennummer ein.",
+      "expiry_required": "Das Ablaufdatum ist erforderlich.",
+      "expiry_invalid": "Geben Sie ein gültiges Ablaufdatum ein (MM/JJ).",
+      "expiry_past": "Diese Karte ist abgelaufen.",
+      "cvv_required": "Der Sicherheitscode ist erforderlich.",
+      "cvv_invalid": "Geben Sie einen gültigen Sicherheitscode ein."
+    }
   }
 }

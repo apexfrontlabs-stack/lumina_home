@@ -1,5 +1,11 @@
 import { lazy, Suspense, useEffect } from 'react'
-import { BrowserRouter, Routes, Route, Outlet, useLocation } from 'react-router-dom'
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Outlet,
+  useLocation,
+} from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
 import CartProvider from './context/CartContext'
@@ -37,7 +43,6 @@ const Privacy = lazy(() => import('./pages/info/Privacy'))
 const ShippingReturns = lazy(() => import('./pages/info/ShippingReturns'))
 const Terms = lazy(() => import('./pages/info/Terms'))
 
-// Auth 
 const Login = lazy(() => import('./pages/auth/Login'))
 const Register = lazy(() => import('./pages/auth/Register'))
 const ForgotPassword = lazy(() => import('./pages/auth/ForgotPassword'))
@@ -47,7 +52,11 @@ function PageLoader() {
   const { t } = useTranslation()
 
   return (
-    <div role="status" aria-live="polite" className="flex min-h-[50vh] items-center justify-center">
+    <div
+      role="status"
+      aria-live="polite"
+      className="flex min-h-[50vh] items-center justify-center"
+    >
       <span className="h-8 w-8 animate-spin rounded-full border-2 border-neutral-300 border-t-brand-dark" />
       <span className="sr-only">{t('common.loading')}</span>
     </div>
@@ -56,9 +65,11 @@ function PageLoader() {
 
 function ScrollToTop() {
   const { pathname } = useLocation()
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [pathname])
+
   return null
 }
 
@@ -67,17 +78,23 @@ function MainLayout() {
     <div className="flex min-h-dvh flex-col bg-white">
       <AnnouncementBar />
       <Header />
+
       <div className="flex-1">
         <Suspense fallback={<PageLoader />}>
           <Outlet />
         </Suspense>
       </div>
+
       <Footer />
     </div>
   )
 }
 
-const withLoader = (element) => <Suspense fallback={<PageLoader />}>{element}</Suspense>
+const withLoader = (element) => (
+  <Suspense fallback={<PageLoader />}>
+    {element}
+  </Suspense>
+)
 
 export default function App() {
   return (
@@ -86,42 +103,86 @@ export default function App() {
         <CartProvider>
           <WishlistProvider>
             <ScrollToTop />
+
             <Routes>
-              
-              {/*  Public Routes (Auth Pages wrapper) */}
+              {/* Authentication pages */}
               <Route element={<PublicRoute />}>
-                <Route path="/login" element={withLoader(<Login />)} />
-                <Route path="/register" element={withLoader(<Register />)} />
-                <Route path="/forget-password" element={withLoader(<ForgotPassword />)} />
-                <Route path="/reset-password" element={withLoader(<ResetPassword />)} />
+                <Route
+                  path="/login"
+                  element={withLoader(<Login />)}
+                />
+                <Route
+                  path="/register"
+                  element={withLoader(<Register />)}
+                />
+                <Route
+                  path="/forget-password"
+                  element={withLoader(<ForgotPassword />)}
+                />
+                <Route
+                  path="/reset-password"
+                  element={withLoader(<ResetPassword />)}
+                />
               </Route>
 
-              {/* Layout Pages */}
+              {/* Main website */}
               <Route element={<MainLayout />}>
                 <Route path="/" element={<Home />} />
                 <Route path="/shop" element={<Shop />} />
-                <Route path="/product/:id" element={<ProductDetails />} />
+
+                <Route
+                  path="/product/:id"
+                  element={<ProductDetails />}
+                />
+
                 <Route path="/cart" element={<Cart />} />
                 <Route path="/wishlist" element={<Wishlist />} />
                 <Route path="/book-setup" element={<BookSetup />} />
+
+                {/* Public order flow */}
+                <Route
+                  path="/checkout"
+                  element={<Checkout />}
+                />
+                <Route
+                  path="/order-success"
+                  element={<OrderSuccess />}
+                />
+                <Route
+                  path="/order-tracking"
+                  element={<OrderTracking />}
+                />
+
+                {/* Blog */}
                 <Route path="/blog" element={<BlogList />} />
-                <Route path="/blog/:slug" element={<BlogDetail />} />
+                <Route
+                  path="/blog/:slug"
+                  element={<BlogDetail />}
+                />
+
+                {/* Information pages */}
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/faq" element={<FAQ />} />
                 <Route path="/privacy" element={<Privacy />} />
                 <Route path="/terms" element={<Terms />} />
-                <Route path="/shipping-returns" element={<ShippingReturns />} />
+                <Route
+                  path="/shipping-returns"
+                  element={<ShippingReturns />}
+                />
 
-                {/*  Protected Routes Wrapper */}
+                {/* Protected account pages */}
                 <Route element={<ProtectedRoute />}>
-                  <Route path="/checkout" element={<Checkout />} />
-                  <Route path="/dashboard" element={<UserDashboard />} />
-                  <Route path="/order-success" element={<OrderSuccess />} />
-                  <Route path="/order-tracking" element={<OrderTracking />} />
+                  <Route
+                    path="/dashboard"
+                    element={<UserDashboard />}
+                  />
                 </Route>
 
-                <Route path="*" element={<NotFound />} />
+                <Route
+                  path="*"
+                  element={<NotFound />}
+                />
               </Route>
             </Routes>
           </WishlistProvider>

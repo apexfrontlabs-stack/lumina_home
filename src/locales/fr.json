@@ -973,5 +973,54 @@
       "recent_orders": "Commandes récentes",
       "view_all": "Tout voir"
     }
+  },
+  "payment": {
+    "tab": "Moyens de paiement",
+    "title": "Moyens de paiement",
+    "subtitle": "Enregistrez une carte pour payer plus vite la prochaine fois.",
+    "secure_note": "Pour votre sécurité, nous ne conservons jamais le numéro complet de votre carte ni son code de sécurité. Seuls les 4 derniers chiffres sont gardés sur cet appareil.",
+    "saved_cards": "Cartes enregistrées",
+    "empty_title": "Aucune carte enregistrée",
+    "empty_text": "Ajoutez une carte pour payer plus rapidement la prochaine fois.",
+    "add_card": "Ajouter une carte",
+    "cancel": "Annuler",
+    "form_title": "Ajouter une nouvelle carte",
+    "card_holder": "Nom sur la carte",
+    "card_holder_placeholder": "Tel qu'il apparaît sur la carte",
+    "card_number": "Numéro de carte",
+    "card_number_placeholder": "1234 5678 9012 3456",
+    "expiry": "Date d'expiration",
+    "expiry_placeholder": "MM/AA",
+    "cvv": "Code de sécurité (CVV)",
+    "cvv_placeholder": "123",
+    "make_default": "Utiliser comme carte par défaut",
+    "save_card": "Enregistrer la carte",
+    "default_badge": "Par défaut",
+    "set_default": "Définir par défaut",
+    "set_default_aria": "Définir la carte se terminant par {{last4}} comme carte par défaut",
+    "remove": "Supprimer",
+    "remove_aria": "Supprimer la carte se terminant par {{last4}}",
+    "card_ending": "{{brand}} se terminant par {{last4}}",
+    "expires": "Expire le {{date}}",
+    "saved_message": "Votre carte a été enregistrée.",
+    "removed_message": "La carte a été supprimée.",
+    "default_message": "Votre carte par défaut a été mise à jour.",
+    "brands": {
+      "visa": "Visa",
+      "mastercard": "Mastercard",
+      "amex": "American Express",
+      "unionpay": "UnionPay",
+      "unknown": "Carte"
+    },
+    "errors": {
+      "holder_required": "Le nom figurant sur la carte est obligatoire.",
+      "number_required": "Le numéro de carte est obligatoire.",
+      "number_invalid": "Saisissez un numéro de carte valide.",
+      "expiry_required": "La date d'expiration est obligatoire.",
+      "expiry_invalid": "Saisissez une date d'expiration valide (MM/AA).",
+      "expiry_past": "Cette carte a expiré.",
+      "cvv_required": "Le code de sécurité est obligatoire.",
+      "cvv_invalid": "Saisissez un code de sécurité valide."
+    }
   }
 }
